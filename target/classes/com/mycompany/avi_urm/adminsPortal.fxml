@@ -1,0 +1,1536 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Polygon?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="770.0" prefWidth="1400.0" styleClass="mainFxmlClass" stylesheets="@adminsportal.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.avi_urm.AdminsPortalController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="85.0" strokeType="INSIDE" width="1400.0">
+         <fill>
+            <LinearGradient endX="0.47727268392389466" endY="1.0" startX="0.47727271914482117">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.0235294122248888" green="0.08235294371843338" blue="0.1764705926179886" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.006729475100942127">
+                     <color>
+                        <Color red="0.0784313753247261" green="0.1764705926179886" blue="0.2862745225429535" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.019607843831181526" green="0.0784313753247261" blue="0.16862745583057404" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+         <stroke>
+            <LinearGradient cycleMethod="REFLECT" endX="1.0" startX="1.0" startY="0.20075759065873688">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.0235294122248888" green="0.08235294371843338" blue="0.1764705926179886" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.006729475100942127">
+                     <color>
+                        <Color red="0.0784313753247261" green="0.1764705926179886" blue="0.2862745225429535" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.019607843831181526" green="0.0784313753247261" blue="0.16862745583057404" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </stroke>
+      </Rectangle>
+      <Label fx:id="lbl_minimize" layoutX="1275.0" layoutY="5.0" onMouseClicked="#MinimizeWindow" onMouseEntered="#FX" prefHeight="60.0" prefWidth="31.0" styleClass="label-hover" stylesheets="@lobby.css" text="-">
+         <font>
+            <Font name="System Bold" size="51.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="0.7424241990754099" endY="0.8598484830422835" startX="0.7424241846257991" startY="0.09090907645948006">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.38823530077934265" green="0.27450981736183167" blue="0.0784313753247261" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="0.7372549176216125" blue="0.12941177189350128" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <effect>
+            <DropShadow height="16.35" radius="7.0975" width="14.04">
+               <color>
+                  <Color red="0.7200000286102295" green="0.5690400004386902" blue="0.18719999492168427" opacity="0.626139760017395" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Label>
+      <Label fx:id="lbl_exit" layoutX="1328.0" layoutY="5.0" onMouseClicked="#GoBack" onMouseEntered="#FX" prefHeight="74.0" prefWidth="31.0" styleClass="label-hover" stylesheets="@lobby.css" text="&lt;">
+         <font>
+            <Font name="System Bold" size="51.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="0.7424241990754099" endY="0.8598484830422835" startX="0.7424241846257991" startY="0.09090907645948006">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.38823530077934265" green="0.27450981736183167" blue="0.0784313753247261" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="0.7372549176216125" blue="0.12941177189350128" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <effect>
+            <DropShadow height="16.35" radius="7.0975" width="14.04">
+               <color>
+                  <Color red="0.7200000286102295" green="0.5690400004386902" blue="0.18719999492168427" opacity="0.626139760017395" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Label>
+      <Polygon fill="#38547e" layoutX="-1176.0" layoutY="-346.0" opacity="0.13" points="1991.199951171875, 429.1999816894531, 1575.60009765625, 402.0, 1442.0, 416.3999938964844, 1360.4000244140625, 389.0, 1272.4000244140625, 416.3999938964844, 1176.4000244140625, 389.0, 1176.4000244140625, 429.1999816894531" stroke="#38547e" strokeType="INSIDE" />
+      <Label layoutX="27.0" layoutY="15.0" prefHeight="55.0" prefWidth="255.0" text="Admins Portal">
+         <font>
+            <Font name="Times New Roman" size="42.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="0.7424241990754099" endY="0.8598484830422835" startX="0.7424241846257991">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.38823530077934265" green="0.27450981736183167" blue="0.0784313753247261" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="0.7372549176216125" blue="0.12941177189350128" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <effect>
+            <DropShadow height="51.42" radius="31.0575" width="74.81">
+               <color>
+                  <Color red="0.8117647171020508" green="0.6745098233222961" blue="0.2666666805744171" opacity="0.47999998927116394" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Label>
+      <Label fx:id="lbl_info" layoutX="39.0" layoutY="735.0" prefHeight="20.0" prefWidth="714.0" textFill="#a41d1d">
+         <font>
+            <Font name="Times New Roman Italic" size="18.0" />
+         </font>
+         <effect>
+            <DropShadow height="37.38" radius="46.86" spread="0.18" width="152.06">
+               <color>
+                  <Color red="1.0" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Label>
+      <TabPane fx:id="tp_sections" layoutX="-2.0" layoutY="87.0" onMouseClicked="#ReloadTables" prefHeight="667.0" prefWidth="1400.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Crear Entidades Académicas">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="417.0" prefWidth="1329.0">
+                     <children>
+                        <AnchorPane layoutX="27.0" layoutY="14.0" prefHeight="134.0" prefWidth="426.0" style="-fx-background-color: #39414e; -fx-background-radius: 25;">
+                           <effect>
+                              <DropShadow height="67.79" radius="35.7325" width="77.14">
+                                 <color>
+                                    <Color opacity="0.6231002807617188" />
+                                 </color>
+                              </DropShadow>
+                           </effect>
+                           <children>
+                              <TextField fx:id="tf_UniverName" layoutX="14.0" layoutY="66.0" prefHeight="43.0" prefWidth="266.0" promptText="Nombre de la universidad" styleClass="custom-text-field" />
+                              <Label layoutX="14.0" layoutY="14.0" text="Crear Universidad" textFill="#ffbc21">
+                                 <font>
+                                    <Font name="Times New Roman" size="30.0" />
+                                 </font>
+                                 <effect>
+                                    <DropShadow>
+                                       <color>
+                                          <Color red="0.9686274528503418" green="0.7137255072593689" blue="0.07450980693101883" opacity="0.5199999809265137" />
+                                       </color>
+                                    </DropShadow>
+                                 </effect>
+                              </Label>
+                              <Button fx:id="btn_createU" layoutX="296.0" layoutY="70.0" mnemonicParsing="false" onAction="#AddNewUniver" onMouseEntered="#FX" prefHeight="27.0" prefWidth="95.0" style="-fx-background-radius: 24; -fx-border-radius: 24; -fx-background-color: #05142b; -fx-border-color: #38547e;" text="Crear" textFill="#ae7f0f">
+                                 <font>
+                                    <Font name="Times New Roman Italic" size="18.0" />
+                                 </font>
+                                 <effect>
+                                    <DropShadow height="35.04" radius="17.02" spread="0.06" width="35.04">
+                                       <color>
+                                          <Color red="0.16596491634845734" green="0.23763157427310944" blue="0.4526315927505493" />
+                                       </color>
+                                    </DropShadow>
+                                 </effect>
+                              </Button>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane layoutX="478.0" layoutY="14.0" prefHeight="386.0" prefWidth="433.0" style="-fx-background-color: #39414e; -fx-background-radius: 25;">
+                           <effect>
+                              <DropShadow height="67.79" radius="35.7325" width="77.14">
+                                 <color>
+                                    <Color opacity="0.6231002807617188" />
+                                 </color>
+                              </DropShadow>
+                           </effect>
+                           <children>
+                              <TextField fx:id="tf_DepartName" layoutX="14.0" layoutY="66.0" prefHeight="43.0" prefWidth="266.0" promptText="Nombre del departamento" styleClass="custom-text-field" />
+                              <Label layoutX="14.0" layoutY="14.0" text="Crear Departamento" textFill="#ffbc21">
+                                 <font>
+                                    <Font name="Times New Roman" size="30.0" />
+                                 </font>
+                                 <effect>
+                                    <DropShadow>
+                                       <color>
+                                          <Color red="0.9686274528503418" green="0.7137255072593689" blue="0.07450980693101883" opacity="0.5199999809265137" />
+                                       </color>
+                                    </DropShadow>
+                                 </effect>
+                              </Label>
+                              <Button fx:id="btn_createDepartment" layoutX="295.0" layoutY="90.0" mnemonicParsing="false" onAction="#AddNewDepartment" onMouseEntered="#FX" prefHeight="62.0" prefWidth="95.0" style="-fx-background-radius: 24; -fx-border-radius: 24; -fx-background-color: #05142b; -fx-border-color: #38547e;" text="Crear" textFill="#ae7f0f">
+                                 <font>
+                                    <Font name="Times New Roman Italic" size="18.0" />
+                                 </font>
+                                 <effect>
+                                    <DropShadow height="35.04" radius="17.02" spread="0.06" width="35.04">
+                                       <color>
+                                          <Color red="0.16596491634845734" green="0.23763157427310944" blue="0.4526315927505493" />
+                                       </color>
+                                    </DropShadow>
+                                 </effect>
+                              </Button>
+                              <TextArea fx:id="ta_DepartmentDescription" layoutX="15.0" layoutY="214.0" prefHeight="142.0" prefWidth="395.0">
+                                 <effect>
+                                    <InnerShadow choke="0.59" height="56.09" radius="27.545" width="56.09">
+                                       <color>
+                                          <Color red="0.2235294133424759" green="0.2549019753932953" blue="0.30588236451148987" />
+                                       </color>
+                                    </InnerShadow>
+                                 </effect>
+                                 <font>
+                                    <Font size="19.0" />
+                                 </font>
+                              </TextArea>
+                              <ChoiceBox fx:id="cbx_facultyID" layoutX="14.0" layoutY="140.0" prefHeight="44.0" prefWidth="266.0" style="-fx-border-radius: 15; -fx-background-radius: 15;">
+                                 <effect>
+                                    <DropShadow height="31.53" radius="14.9725" spread="0.09" width="30.36">
+                                       <color>
+                                          <Color red="0.38823530077934265" green="0.27450981736183167" blue="0.0784313753247261" opacity="0.6800000071525574" />
+                                       </color>
+                                    </DropShadow>
+                                 </effect>
+                              </ChoiceBox>
+                              <Label layoutX="22.0" layoutY="193.0" text="Descripcion:" textFill="WHITE">
+                                 <font>
+                                    <Font name="Times New Roman" size="15.0" />
+                                 </font>
+                                 <effect>
+                                    <DropShadow>
+                                       <color>
+                                          <Color red="1.0" green="1.0" blue="1.0" opacity="0.5227963924407959" />
+                                       </color>
+                                    </DropShadow>
+                                 </effect>
+                              </Label>
+                              <Label layoutX="22.0" layoutY="121.0" text="Facultad:" textFill="WHITE">
+                                 <font>
+                                    <Font name="Times New Roman" size="15.0" />
+                                 </font>
+                                 <effect>
+                                    <DropShadow>
+                                       <color>
+                                          <Color red="1.0" green="1.0" blue="1.0" opacity="0.5227963924407959" />
+                                       </color>
+                                    </DropShadow>
+                                 </effect>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane layoutX="936.0" layoutY="14.0" prefHeight="583.0" prefWidth="438.0" style="-fx-background-color: #39414e; -fx-background-radius: 25;">
+                           <effect>
+                              <DropShadow height="67.79" radius="35.7325" width="77.14">
+                                 <color>
+                                    <Color opacity="0.6231002807617188" />
+                                 </color>
+                              </DropShadow>
+                           </effect>
+                           <children>
+                              <TextField fx:id="tf_CourseName" layoutX="32.0" layoutY="56.0" prefHeight="43.0" prefWidth="378.0" promptText="Nombre del curso" styleClass="custom-text-field" />
+                              <Label layoutX="31.0" layoutY="14.0" text="Crear Curso" textFill="#ffbc21">
+                                 <font>
+                                    <Font name="Times New Roman" size="30.0" />
+                                 </font>
+                                 <effect>
+                                    <DropShadow>
+                                       <color>
+                                          <Color red="0.9686274528503418" green="0.7137255072593689" blue="0.07450980693101883" opacity="0.5199999809265137" />
+                                       </color>
+                                    </DropShadow>
+                                 </effect>
+                              </Label>
+                              <Button fx:id="btn_createCourse" layoutX="11.0" layoutY="513.0" mnemonicParsing="false" onAction="#AddNewCourse" onMouseEntered="#FX" prefHeight="55.0" prefWidth="402.0" style="-fx-background-radius: 24; -fx-border-radius: 24; -fx-background-color: #05142b; -fx-border-color: #38547e;" text="Crear" textFill="#ae7f0f">
+                                 <font>
+                                    <Font name="Times New Roman Italic" size="18.0" />
+                                 </font>
+                                 <effect>
+                                    <DropShadow height="35.04" radius="17.02" spread="0.06" width="35.04">
+                                       <color>
+                                          <Color red="0.16596491634845734" green="0.23763157427310944" blue="0.4526315927505493" />
+                                       </color>
+                                    </DropShadow>
+                                 </effect>
+                              </Button>
+                              <TextArea fx:id="ta_CourseDescription" layoutX="32.0" layoutY="350.0" prefHeight="152.0" prefWidth="370.0">
+                                 <effect>
+                                    <InnerShadow choke="0.59" height="56.09" radius="27.545" width="56.09">
+                                       <color>
+                                          <Color red="0.2235294133424759" green="0.2549019753932953" blue="0.30588236451148987" />
+                                       </color>
+                                    </InnerShadow>
+                                 </effect>
+                                 <font>
+                                    <Font size="19.0" />
+                                 </font>
+                              </TextArea>
+                              <ChoiceBox fx:id="cbx_departmentID" layoutX="35.0" layoutY="151.0" prefHeight="44.0" prefWidth="375.0" style="-fx-border-radius: 15; -fx-background-radius: 15;">
+                                 <effect>
+                                    <DropShadow height="31.53" radius="14.9725" spread="0.09" width="30.36">
+                                       <color>
+                                          <Color red="0.38823530077934265" green="0.27450981736183167" blue="0.0784313753247261" opacity="0.6800000071525574" />
+                                       </color>
+                                    </DropShadow>
+                                 </effect>
+                              </ChoiceBox>
+                              <ChoiceBox fx:id="cbx_professorID" layoutX="35.0" layoutY="248.0" prefHeight="44.0" prefWidth="374.0" style="-fx-border-radius: 15; -fx-background-radius: 15;">
+                                 <effect>
+                                    <DropShadow height="31.53" radius="14.9725" spread="0.09" width="30.36">
+                                       <color>
+                                          <Color red="0.38823530077934265" green="0.27450981736183167" blue="0.0784313753247261" opacity="0.6800000071525574" />
+                                       </color>
+                                    </DropShadow>
+                                 </effect>
+                              </ChoiceBox>
+                              <Label layoutX="44.0" layoutY="123.0" text="Departamento:" textFill="WHITE">
+                                 <font>
+                                    <Font name="Times New Roman" size="15.0" />
+                                 </font>
+                                 <effect>
+                                    <DropShadow>
+                                       <color>
+                                          <Color red="1.0" green="1.0" blue="1.0" opacity="0.5227963924407959" />
+                                       </color>
+                                    </DropShadow>
+                                 </effect>
+                              </Label>
+                              <Label layoutX="44.0" layoutY="222.0" text="Profesor:" textFill="WHITE">
+                                 <font>
+                                    <Font name="Times New Roman" size="15.0" />
+                                 </font>
+                                 <effect>
+                                    <DropShadow>
+                                       <color>
+                                          <Color red="1.0" green="1.0" blue="1.0" opacity="0.5227963924407959" />
+                                       </color>
+                                    </DropShadow>
+                                 </effect>
+                              </Label>
+                              <Label layoutX="44.0" layoutY="331.0" text="Descripcion:" textFill="WHITE">
+                                 <font>
+                                    <Font name="Times New Roman" size="15.0" />
+                                 </font>
+                                 <effect>
+                                    <DropShadow>
+                                       <color>
+                                          <Color red="1.0" green="1.0" blue="1.0" opacity="0.5227963924407959" />
+                                       </color>
+                                    </DropShadow>
+                                 </effect>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane layoutX="27.0" layoutY="167.0" prefHeight="426.0" prefWidth="426.0" style="-fx-background-color: #39414e; -fx-background-radius: 25;">
+                           <effect>
+                              <DropShadow height="67.79" radius="35.7325" width="77.14">
+                                 <color>
+                                    <Color opacity="0.6231002807617188" />
+                                 </color>
+                              </DropShadow>
+                           </effect>
+                           <children>
+                              <TextField fx:id="tf_FacultyName" layoutX="14.0" layoutY="66.0" prefHeight="43.0" prefWidth="266.0" promptText="Nombre de la facultad" styleClass="custom-text-field" />
+                              <Label layoutX="14.0" layoutY="14.0" text="Crear Facultad" textFill="#ffbc21">
+                                 <font>
+                                    <Font name="Times New Roman" size="30.0" />
+                                 </font>
+                                 <effect>
+                                    <DropShadow>
+                                       <color>
+                                          <Color red="0.9686274528503418" green="0.7137255072593689" blue="0.07450980693101883" opacity="0.5199999809265137" />
+                                       </color>
+                                    </DropShadow>
+                                 </effect>
+                              </Label>
+                              <Button fx:id="btn_createFaculty" layoutX="302.0" layoutY="109.0" mnemonicParsing="false" onAction="#AddNewFaculty" onMouseEntered="#FX" prefHeight="62.0" prefWidth="95.0" style="-fx-background-radius: 24; -fx-border-radius: 24; -fx-background-color: #05142b; -fx-border-color: #38547e;" text="Crear" textFill="#ae7f0f">
+                                 <font>
+                                    <Font name="Times New Roman Italic" size="18.0" />
+                                 </font>
+                                 <effect>
+                                    <DropShadow height="35.04" radius="17.02" spread="0.06" width="35.04">
+                                       <color>
+                                          <Color red="0.16596491634845734" green="0.23763157427310944" blue="0.4526315927505493" />
+                                       </color>
+                                    </DropShadow>
+                                 </effect>
+                              </Button>
+                              <TextArea fx:id="ta_FacultyDescription" layoutX="15.0" layoutY="259.0" prefHeight="142.0" prefWidth="395.0">
+                                 <effect>
+                                    <InnerShadow choke="0.59" height="56.09" radius="27.545" width="56.09">
+                                       <color>
+                                          <Color red="0.2235294133424759" green="0.2549019753932953" blue="0.30588236451148987" />
+                                       </color>
+                                    </InnerShadow>
+                                 </effect>
+                                 <font>
+                                    <Font size="19.0" />
+                                 </font>
+                              </TextArea>
+                              <ChoiceBox fx:id="cbx_UniverID" layoutX="14.0" layoutY="169.0" prefHeight="44.0" prefWidth="266.0" style="-fx-border-radius: 15; -fx-background-radius: 15;">
+                                 <effect>
+                                    <DropShadow height="31.53" radius="14.9725" spread="0.09" width="30.36">
+                                       <color>
+                                          <Color red="0.38823530077934265" green="0.27450981736183167" blue="0.0784313753247261" opacity="0.6800000071525574" />
+                                       </color>
+                                    </DropShadow>
+                                 </effect>
+                              </ChoiceBox>
+                              <Label layoutX="24.0" layoutY="145.0" text="Universidad:" textFill="WHITE">
+                                 <font>
+                                    <Font name="Times New Roman" size="15.0" />
+                                 </font>
+                                 <effect>
+                                    <DropShadow>
+                                       <color>
+                                          <Color red="1.0" green="1.0" blue="1.0" opacity="0.5227963924407959" />
+                                       </color>
+                                    </DropShadow>
+                                 </effect>
+                              </Label>
+                              <Label layoutX="25.0" layoutY="240.0" text="Descripcion:" textFill="WHITE">
+                                 <font>
+                                    <Font name="Times New Roman" size="15.0" />
+                                 </font>
+                                 <effect>
+                                    <DropShadow>
+                                       <color>
+                                          <Color red="1.0" green="1.0" blue="1.0" opacity="0.5227963924407959" />
+                                       </color>
+                                    </DropShadow>
+                                 </effect>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane layoutX="478.0" layoutY="421.0" prefHeight="173.0" prefWidth="434.0" style="-fx-background-color: #39414e; -fx-background-radius: 25;">
+                           <effect>
+                              <DropShadow height="67.79" radius="35.7325" width="77.14">
+                                 <color>
+                                    <Color opacity="0.6231002807617188" />
+                                 </color>
+                              </DropShadow>
+                           </effect>
+                           <children>
+                              <Label layoutX="14.0" layoutY="8.0" text="Crear Respuesta de IA" textFill="#ffbc21">
+                                 <font>
+                                    <Font name="Times New Roman" size="30.0" />
+                                 </font>
+                                 <effect>
+                                    <DropShadow>
+                                       <color>
+                                          <Color red="0.9686274528503418" green="0.7137255072593689" blue="0.07450980693101883" opacity="0.5199999809265137" />
+                                       </color>
+                                    </DropShadow>
+                                 </effect>
+                              </Label>
+                              <Button fx:id="btn_IAanswere" layoutX="305.0" layoutY="82.0" mnemonicParsing="false" onAction="#AddNewAnswereIA" onMouseEntered="#FX" prefHeight="62.0" prefWidth="95.0" style="-fx-background-radius: 24; -fx-border-radius: 24; -fx-background-color: #05142b; -fx-border-color: #38547e;" text="Crear" textFill="#ae7f0f">
+                                 <font>
+                                    <Font name="Times New Roman Italic" size="18.0" />
+                                 </font>
+                                 <effect>
+                                    <DropShadow height="35.04" radius="17.02" spread="0.06" width="35.04">
+                                       <color>
+                                          <Color red="0.16596491634845734" green="0.23763157427310944" blue="0.4526315927505493" />
+                                       </color>
+                                    </DropShadow>
+                                 </effect>
+                              </Button>
+                              <TextArea fx:id="ta_answereForIA" layoutX="14.0" layoutY="67.0" prefHeight="93.0" prefWidth="271.0">
+                                 <effect>
+                                    <InnerShadow choke="0.59" height="56.09" radius="27.545" width="56.09">
+                                       <color>
+                                          <Color red="0.2235294133424759" green="0.2549019753932953" blue="0.30588236451148987" />
+                                       </color>
+                                    </InnerShadow>
+                                 </effect>
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                              </TextArea>
+                              <Label layoutX="25.0" layoutY="48.0" text="Contenido:" textFill="WHITE">
+                                 <font>
+                                    <Font name="Times New Roman" size="15.0" />
+                                 </font>
+                                 <effect>
+                                    <DropShadow>
+                                       <color>
+                                          <Color red="1.0" green="1.0" blue="1.0" opacity="0.5227963924407959" />
+                                       </color>
+                                    </DropShadow>
+                                 </effect>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Ver y Eliminar Entidades Académicas">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <AnchorPane layoutX="14.0" layoutY="30.0" prefHeight="246.0" prefWidth="287.0" style="-fx-background-color: #39414e; -fx-background-radius: 25;">
+                           <effect>
+                              <DropShadow height="67.79" radius="35.7325" width="77.14">
+                                 <color>
+                                    <Color opacity="0.6231002807617188" />
+                                 </color>
+                              </DropShadow>
+                           </effect>
+                           <children>
+                              <Label layoutX="57.0" layoutY="14.0" text="Universidades" textFill="WHITE">
+                                 <font>
+                                    <Font name="Times New Roman" size="30.0" />
+                                 </font>
+                                 <effect>
+                                    <DropShadow>
+                                       <color>
+                                          <Color red="1.0" green="1.0" blue="1.0" opacity="0.5199999809265137" />
+                                       </color>
+                                    </DropShadow>
+                                 </effect>
+                              </Label>
+                              <TableView fx:id="university_tv" layoutX="19.0" layoutY="52.0" onMouseClicked="#GetUniversityData" prefHeight="179.0" prefWidth="249.0" style="-fx-background-color: #535b66; -fx-background-radius: 10;" stylesheets="@addall.css">
+                                 <columns>
+                                    <TableColumn fx:id="tab_UniversityID" editable="false" prefWidth="51.19997787475586" sortable="false" text="ID" />
+                                    <TableColumn fx:id="tab_UniversityName" editable="false" minWidth="0.0" prefWidth="196.8000045776367" sortable="false" text="Nombre" />
+                                 </columns>
+                                 <columnResizePolicy>
+                                    <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                 </columnResizePolicy>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane layoutX="375.0" layoutY="30.0" prefHeight="246.0" prefWidth="632.0" style="-fx-background-color: #39414e; -fx-background-radius: 25;">
+                           <effect>
+                              <DropShadow height="67.79" radius="35.7325" width="77.14">
+                                 <color>
+                                    <Color opacity="0.6231002807617188" />
+                                 </color>
+                              </DropShadow>
+                           </effect>
+                           <children>
+                              <Label layoutX="252.0" layoutY="14.0" text="Facultades" textFill="WHITE">
+                                 <font>
+                                    <Font name="Times New Roman" size="30.0" />
+                                 </font>
+                                 <effect>
+                                    <DropShadow>
+                                       <color>
+                                          <Color red="1.0" green="1.0" blue="1.0" opacity="0.5199999809265137" />
+                                       </color>
+                                    </DropShadow>
+                                 </effect>
+                              </Label>
+                              <TableView fx:id="faculties_tv" layoutX="15.0" layoutY="52.0" onMouseClicked="#GetFacultyData" prefHeight="179.0" prefWidth="602.0" style="-fx-background-color: #535b66; -fx-background-radius: 10;" stylesheets="@addall.css">
+                                 <columns>
+                                    <TableColumn fx:id="tab_facultyID" editable="false" prefWidth="41.60000228881836" sortable="false" text="ID" />
+                                    <TableColumn fx:id="tab_facultyName" editable="false" minWidth="0.0" prefWidth="177.6000518798828" sortable="false" text="Nombre" />
+                                    <TableColumn fx:id="tab_facultyInfo" editable="false" minWidth="0.0" prefWidth="265.59991455078125" sortable="false" text="Informacion" />
+                                    <TableColumn fx:id="tab_facultyUniverID" editable="false" minWidth="0.0" prefWidth="112.79998779296875" sortable="false" text="ID Universidad" />
+                                 </columns>
+                                 <columnResizePolicy>
+                                    <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                 </columnResizePolicy>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane layoutX="1080.0" layoutY="30.0" prefHeight="246.0" prefWidth="287.0" style="-fx-background-color: #39414e; -fx-background-radius: 25;">
+                           <effect>
+                              <DropShadow height="67.79" radius="35.7325" width="77.14">
+                                 <color>
+                                    <Color opacity="0.6231002807617188" />
+                                 </color>
+                              </DropShadow>
+                           </effect>
+                           <children>
+                              <Label layoutX="57.0" layoutY="14.0" text="Respuestas IA" textFill="WHITE">
+                                 <font>
+                                    <Font name="Times New Roman" size="30.0" />
+                                 </font>
+                                 <effect>
+                                    <DropShadow>
+                                       <color>
+                                          <Color red="1.0" green="1.0" blue="1.0" opacity="0.5199999809265137" />
+                                       </color>
+                                    </DropShadow>
+                                 </effect>
+                              </Label>
+                              <TableView fx:id="iaAnswere_tv" layoutX="19.0" layoutY="52.0" onMouseClicked="#GetAnswereData" prefHeight="179.0" prefWidth="249.0" style="-fx-background-color: #535b66; -fx-background-radius: 10;" stylesheets="@addall.css">
+                                 <columns>
+                                    <TableColumn fx:id="tab_answereID" editable="false" prefWidth="51.19997787475586" sortable="false" text="ID" />
+                                    <TableColumn fx:id="tab_contentAnswere" editable="false" minWidth="0.0" prefWidth="194.39990234375" sortable="false" text="Contenido" />
+                                 </columns>
+                                 <columnResizePolicy>
+                                    <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                 </columnResizePolicy>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane layoutX="652.0" layoutY="315.0" prefHeight="246.0" prefWidth="714.0" style="-fx-background-color: #39414e; -fx-background-radius: 25;">
+                           <effect>
+                              <DropShadow height="67.79" radius="35.7325" width="77.14">
+                                 <color>
+                                    <Color opacity="0.6231002807617188" />
+                                 </color>
+                              </DropShadow>
+                           </effect>
+                           <children>
+                              <Label layoutX="317.0" layoutY="14.0" text="Cursos" textFill="WHITE">
+                                 <font>
+                                    <Font name="Times New Roman" size="30.0" />
+                                 </font>
+                                 <effect>
+                                    <DropShadow>
+                                       <color>
+                                          <Color red="1.0" green="1.0" blue="1.0" opacity="0.5199999809265137" />
+                                       </color>
+                                    </DropShadow>
+                                 </effect>
+                              </Label>
+                              <TableView fx:id="courses_tv" layoutX="15.0" layoutY="52.0" onMouseClicked="#GetCourseData" prefHeight="179.0" prefWidth="687.0" style="-fx-background-color: #535b66; -fx-background-radius: 10;" stylesheets="@addall.css">
+                                 <columns>
+                                    <TableColumn fx:id="tab_courseID" editable="false" prefWidth="43.200008392333984" sortable="false" text="ID" />
+                                    <TableColumn fx:id="tab_courseProfID" editable="false" minWidth="0.0" prefWidth="78.39996337890625" sortable="false" text="ID Profesor" />
+                                    <TableColumn fx:id="tab_courseDepartID" editable="false" minWidth="0.0" prefWidth="106.4000244140625" sortable="false" text="ID Departamento" />
+                                    <TableColumn fx:id="tab_courseName" editable="false" minWidth="0.0" prefWidth="154.40008544921875" sortable="false" text="Nombre" />
+                                    <TableColumn fx:id="tab_courseInfo" editable="false" minWidth="0.0" prefWidth="298.4000244140625" sortable="false" text="Informacion" />
+                                 </columns>
+                                 <columnResizePolicy>
+                                    <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                 </columnResizePolicy>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane layoutX="14.0" layoutY="315.0" prefHeight="246.0" prefWidth="600.0" style="-fx-background-color: #39414e; -fx-background-radius: 25;">
+                           <effect>
+                              <DropShadow height="67.79" radius="35.7325" width="77.14">
+                                 <color>
+                                    <Color opacity="0.6231002807617188" />
+                                 </color>
+                              </DropShadow>
+                           </effect>
+                           <children>
+                              <Label layoutX="211.0" layoutY="14.0" text="Departamento" textFill="WHITE">
+                                 <font>
+                                    <Font name="Times New Roman" size="30.0" />
+                                 </font>
+                                 <effect>
+                                    <DropShadow>
+                                       <color>
+                                          <Color red="1.0" green="1.0" blue="1.0" opacity="0.5199999809265137" />
+                                       </color>
+                                    </DropShadow>
+                                 </effect>
+                              </Label>
+                              <TableView fx:id="departtments_tv" layoutX="15.0" layoutY="52.0" onMouseClicked="#GetDepartmentData" prefHeight="179.0" prefWidth="562.0" style="-fx-background-color: #535b66; -fx-background-radius: 10;" stylesheets="@addall.css">
+                                 <columns>
+                                    <TableColumn fx:id="tab_departmentID" editable="false" prefWidth="43.200008392333984" sortable="false" text="ID" />
+                                    <TableColumn fx:id="tab_departmentName" editable="false" minWidth="0.0" prefWidth="170.4000244140625" sortable="false" text="Nombre" />
+                                    <TableColumn fx:id="tab_departmentInfo" editable="false" minWidth="0.0" prefWidth="270.40003967285156" sortable="false" text="Informacion" />
+                                    <TableColumn fx:id="tab_departmentFacultyID" editable="false" minWidth="0.0" prefWidth="75.19998779296873" sortable="false" text="ID Facultad" />
+                                 </columns>
+                                 <columnResizePolicy>
+                                    <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                 </columnResizePolicy>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                        <Button fx:id="btn_deleteSelection" disable="true" layoutX="900.0" layoutY="572.0" mnemonicParsing="false" onAction="#DeleteSelection" onMouseEntered="#FX" prefHeight="44.0" prefWidth="369.0" style="-fx-background-radius: 24; -fx-border-radius: 24; -fx-background-color: #05142b; -fx-border-color: #38547e;" text="Eliminar" textFill="#ae7f0f">
+                           <font>
+                              <Font name="Times New Roman Italic" size="18.0" />
+                           </font>
+                           <effect>
+                              <DropShadow height="35.04" radius="17.02" spread="0.06" width="35.04">
+                                 <color>
+                                    <Color red="0.16596491634845734" green="0.23763157427310944" blue="0.4526315927505493" />
+                                 </color>
+                              </DropShadow>
+                           </effect>
+                        </Button>
+                        <Button fx:id="btn_ChangeTab" disable="true" layoutX="1276.0" layoutY="572.0" mnemonicParsing="false" onAction="#GoToEditTab" onMouseEntered="#FX" prefHeight="44.0" prefWidth="92.0" style="-fx-background-radius: 24; -fx-border-radius: 24; -fx-background-color: #0d2c5b; -fx-border-color: #05142b;" text="Editar" textFill="#ae7f0f">
+                           <font>
+                              <Font name="Times New Roman Italic" size="18.0" />
+                           </font>
+                           <effect>
+                              <DropShadow height="35.04" radius="17.02" spread="0.06" width="35.04">
+                                 <color>
+                                    <Color red="0.019607843831181526" green="0.0784313753247261" blue="0.16862745583057404" />
+                                 </color>
+                              </DropShadow>
+                           </effect>
+                        </Button>
+                     </children></AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Editar Entidades Académicas">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label contentDisplay="TOP" layoutX="61.0" layoutY="29.0" prefHeight="27.0" prefWidth="1088.0" text="Para editar alguna de las entidades primero seleccionela en la pestaña anterior y luego seleccionme el boton  editar." textAlignment="CENTER" textFill="WHITE" textOverrun="CLIP">
+                           <font>
+                              <Font name="Times New Roman Italic" size="23.0" />
+                           </font>
+                           <effect>
+                              <DropShadow height="21.35" radius="8.345" width="14.03">
+                                 <color>
+                                    <Color red="1.0" green="1.0" blue="1.0" />
+                                 </color>
+                              </DropShadow>
+                           </effect>
+                        </Label>
+                        <AnchorPane fx:id="EditCurso_ap" disable="true" layoutX="628.0" layoutY="371.0" prefHeight="242.0" prefWidth="562.0" style="-fx-background-color: #39414e; -fx-background-radius: 25;">
+                           <effect>
+                              <DropShadow height="67.79" radius="35.7325" width="77.14">
+                                 <color>
+                                    <Color opacity="0.6231002807617188" />
+                                 </color>
+                              </DropShadow>
+                           </effect>
+                           <children>
+                              <Label layoutX="28.0" layoutY="12.0" text="Cursos" textFill="#ffbc21">
+                                 <font>
+                                    <Font name="Times New Roman" size="27.0" />
+                                 </font>
+                                 <effect>
+                                    <DropShadow>
+                                       <color>
+                                          <Color red="0.9686274528503418" green="0.7137255072593689" blue="0.07450980693101883" opacity="0.5199999809265137" />
+                                       </color>
+                                    </DropShadow>
+                                 </effect>
+                              </Label>
+                              <TextField fx:id="tf_EditCourseName" layoutX="28.0" layoutY="51.0" prefHeight="43.0" prefWidth="246.0" promptText="Nombre del curso" styleClass="custom-text-field" />
+                              <ChoiceBox fx:id="cbx_EditdepartmentID" layoutX="28.0" layoutY="119.0" prefHeight="44.0" prefWidth="246.0" style="-fx-border-radius: 15; -fx-background-radius: 15;">
+                                 <effect>
+                                    <DropShadow height="31.53" radius="14.9725" spread="0.09" width="30.36">
+                                       <color>
+                                          <Color red="0.38823530077934265" green="0.27450981736183167" blue="0.0784313753247261" opacity="0.6800000071525574" />
+                                       </color>
+                                    </DropShadow>
+                                 </effect>
+                              </ChoiceBox>
+                              <ChoiceBox fx:id="cbx_EditProfessorID" layoutX="27.0" layoutY="184.0" prefHeight="44.0" prefWidth="245.0" style="-fx-border-radius: 15; -fx-background-radius: 15;">
+                                 <effect>
+                                    <DropShadow height="31.53" radius="14.9725" spread="0.09" width="30.36">
+                                       <color>
+                                          <Color red="0.38823530077934265" green="0.27450981736183167" blue="0.0784313753247261" opacity="0.6800000071525574" />
+                                       </color>
+                                    </DropShadow>
+                                 </effect>
+                              </ChoiceBox>
+                              <TextArea fx:id="ta_EditCourseDescription" layoutX="281.0" layoutY="65.0" prefHeight="166.0" prefWidth="262.0">
+                                 <effect>
+                                    <InnerShadow choke="0.59" height="56.09" radius="27.545" width="56.09">
+                                       <color>
+                                          <Color red="0.2235294133424759" green="0.2549019753932953" blue="0.30588236451148987" />
+                                       </color>
+                                    </InnerShadow>
+                                 </effect>
+                                 <font>
+                                    <Font size="19.0" />
+                                 </font>
+                              </TextArea>
+                              <Label layoutX="39.0" layoutY="103.0" text="Departamento:" textFill="WHITE">
+                                 <font>
+                                    <Font name="Times New Roman" size="13.0" />
+                                 </font>
+                                 <effect>
+                                    <DropShadow>
+                                       <color>
+                                          <Color red="1.0" green="1.0" blue="1.0" opacity="0.5227963924407959" />
+                                       </color>
+                                    </DropShadow>
+                                 </effect>
+                              </Label>
+                              <Label layoutX="39.0" layoutY="168.0" text="Profesor:" textFill="WHITE">
+                                 <font>
+                                    <Font name="Times New Roman" size="13.0" />
+                                 </font>
+                                 <effect>
+                                    <DropShadow>
+                                       <color>
+                                          <Color red="1.0" green="1.0" blue="1.0" opacity="0.5227963924407959" />
+                                       </color>
+                                    </DropShadow>
+                                 </effect>
+                              </Label>
+                              <Label layoutX="383.0" layoutY="43.0" text="Contenido:" textFill="WHITE">
+                                 <font>
+                                    <Font name="Times New Roman" size="13.0" />
+                                 </font>
+                                 <effect>
+                                    <DropShadow>
+                                       <color>
+                                          <Color red="1.0" green="1.0" blue="1.0" opacity="0.5227963924407959" />
+                                       </color>
+                                    </DropShadow>
+                                 </effect>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane fx:id="EditDepartment_ap" disable="true" layoutX="23.0" layoutY="83.0" prefHeight="270.0" prefWidth="582.0" style="-fx-background-color: #39414e; -fx-background-radius: 25;">
+                           <effect>
+                              <DropShadow height="67.79" radius="35.7325" width="77.14">
+                                 <color>
+                                    <Color opacity="0.6231002807617188" />
+                                 </color>
+                              </DropShadow>
+                           </effect>
+                           <children>
+                              <Label layoutX="26.0" layoutY="14.0" text="Departamentos" textFill="#ffbc21">
+                                 <font>
+                                    <Font name="Times New Roman" size="27.0" />
+                                 </font>
+                                 <effect>
+                                    <DropShadow>
+                                       <color>
+                                          <Color red="0.9686274528503418" green="0.7137255072593689" blue="0.07450980693101883" opacity="0.5199999809265137" />
+                                       </color>
+                                    </DropShadow>
+                                 </effect>
+                              </Label>
+                              <TextField fx:id="tf_EditDepartName" layoutX="14.0" layoutY="91.0" prefHeight="43.0" prefWidth="236.0" promptText="Nombre del departamento" styleClass="custom-text-field" />
+                              <TextArea fx:id="ta_EditDepartmentDescription" layoutX="280.0" layoutY="61.0" prefHeight="194.0" prefWidth="274.0">
+                                 <effect>
+                                    <InnerShadow choke="0.59" height="56.09" radius="27.545" width="56.09">
+                                       <color>
+                                          <Color red="0.2235294133424759" green="0.2549019753932953" blue="0.30588236451148987" />
+                                       </color>
+                                    </InnerShadow>
+                                 </effect>
+                                 <font>
+                                    <Font size="19.0" />
+                                 </font>
+                              </TextArea>
+                              <ChoiceBox fx:id="cbx_EditfacultyID" layoutX="13.0" layoutY="164.0" prefHeight="44.0" prefWidth="237.0" style="-fx-border-radius: 15; -fx-background-radius: 15;">
+                                 <effect>
+                                    <DropShadow height="31.53" radius="14.9725" spread="0.09" width="30.36">
+                                       <color>
+                                          <Color red="0.38823530077934265" green="0.27450981736183167" blue="0.0784313753247261" opacity="0.6800000071525574" />
+                                       </color>
+                                    </DropShadow>
+                                 </effect>
+                              </ChoiceBox>
+                              <Label layoutX="388.0" layoutY="45.0" text="Contenido:" textFill="WHITE">
+                                 <font>
+                                    <Font name="Times New Roman" size="13.0" />
+                                 </font>
+                                 <effect>
+                                    <DropShadow>
+                                       <color>
+                                          <Color red="1.0" green="1.0" blue="1.0" opacity="0.5227963924407959" />
+                                       </color>
+                                    </DropShadow>
+                                 </effect>
+                              </Label>
+                              <Label layoutX="26.0" layoutY="142.0" text="Facultad:" textFill="WHITE">
+                                 <font>
+                                    <Font name="Times New Roman" size="13.0" />
+                                 </font>
+                                 <effect>
+                                    <DropShadow>
+                                       <color>
+                                          <Color red="1.0" green="1.0" blue="1.0" opacity="0.5227963924407959" />
+                                       </color>
+                                    </DropShadow>
+                                 </effect>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane fx:id="EditFacultad_ap" disable="true" layoutX="23.0" layoutY="370.0" prefHeight="242.0" prefWidth="582.0" style="-fx-background-color: #39414e; -fx-background-radius: 25;">
+                           <effect>
+                              <DropShadow height="67.79" radius="35.7325" width="77.14">
+                                 <color>
+                                    <Color opacity="0.6231002807617188" />
+                                 </color>
+                              </DropShadow>
+                           </effect>
+                           <children>
+                              <Label layoutX="29.0" layoutY="14.0" text="Facultad" textFill="#ffbc21">
+                                 <font>
+                                    <Font name="Times New Roman" size="27.0" />
+                                 </font>
+                                 <effect>
+                                    <DropShadow>
+                                       <color>
+                                          <Color red="0.9686274528503418" green="0.7137255072593689" blue="0.07450980693101883" opacity="0.5199999809265137" />
+                                       </color>
+                                    </DropShadow>
+                                 </effect>
+                              </Label>
+                              <TextField fx:id="tf_EditFacultyName" layoutX="14.0" layoutY="67.0" prefHeight="43.0" prefWidth="255.0" promptText="Nombre de la facultad" styleClass="custom-text-field" />
+                              <ChoiceBox fx:id="cbx_EditUniverID" layoutX="14.0" layoutY="147.0" prefHeight="44.0" prefWidth="255.0" style="-fx-border-radius: 15; -fx-background-radius: 15;">
+                                 <effect>
+                                    <DropShadow height="31.53" radius="14.9725" spread="0.09" width="30.36">
+                                       <color>
+                                          <Color red="0.38823530077934265" green="0.27450981736183167" blue="0.0784313753247261" opacity="0.6800000071525574" />
+                                       </color>
+                                    </DropShadow>
+                                 </effect>
+                              </ChoiceBox>
+                              <TextArea fx:id="ta_EditFacultyDescription" layoutX="303.0" layoutY="57.0" prefHeight="168.0" prefWidth="255.0">
+                                 <effect>
+                                    <InnerShadow choke="0.59" height="56.09" radius="27.545" width="56.09">
+                                       <color>
+                                          <Color red="0.2235294133424759" green="0.2549019753932953" blue="0.30588236451148987" />
+                                       </color>
+                                    </InnerShadow>
+                                 </effect>
+                                 <font>
+                                    <Font size="19.0" />
+                                 </font>
+                              </TextArea>
+                              <Label layoutX="401.0" layoutY="36.0" text="Contenido:" textFill="WHITE">
+                                 <font>
+                                    <Font name="Times New Roman" size="13.0" />
+                                 </font>
+                                 <effect>
+                                    <DropShadow>
+                                       <color>
+                                          <Color red="1.0" green="1.0" blue="1.0" opacity="0.5227963924407959" />
+                                       </color>
+                                    </DropShadow>
+                                 </effect>
+                              </Label>
+                              <Label layoutX="29.0" layoutY="127.0" text="Universidad:" textFill="WHITE">
+                                 <font>
+                                    <Font name="Times New Roman" size="13.0" />
+                                 </font>
+                                 <effect>
+                                    <DropShadow>
+                                       <color>
+                                          <Color red="1.0" green="1.0" blue="1.0" opacity="0.5227963924407959" />
+                                       </color>
+                                    </DropShadow>
+                                 </effect>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                        <Button fx:id="btn_saveChanges" disable="true" layoutX="1217.0" layoutY="571.0" mnemonicParsing="false" onAction="#SaveChanges" onMouseEntered="#FX" prefHeight="50.0" prefWidth="157.0" style="-fx-background-radius: 24; -fx-border-radius: 24; -fx-background-color: #05142b; -fx-border-color: #38547e;" text="Guardar cambios" textFill="#ae7f0f">
+                           <font>
+                              <Font name="Times New Roman Italic" size="18.0" />
+                           </font>
+                           <effect>
+                              <DropShadow height="35.04" radius="17.02" spread="0.06" width="35.04">
+                                 <color>
+                                    <Color red="0.16596491634845734" green="0.23763157427310944" blue="0.4526315927505493" />
+                                 </color>
+                              </DropShadow>
+                           </effect>
+                        </Button>
+                        <AnchorPane fx:id="EditUniversidad_ap" disable="true" layoutX="636.0" layoutY="243.0" prefHeight="112.0" prefWidth="545.0" style="-fx-background-color: #39414e; -fx-background-radius: 25;">
+                           <effect>
+                              <DropShadow height="67.79" radius="35.7325" width="77.14">
+                                 <color>
+                                    <Color opacity="0.6231002807617188" />
+                                 </color>
+                              </DropShadow>
+                           </effect>
+                           <children>
+                              <Label layoutX="207.0" layoutY="14.0" text="Universidad" textFill="#ffbc21">
+                                 <font>
+                                    <Font name="Times New Roman" size="27.0" />
+                                 </font>
+                                 <effect>
+                                    <DropShadow>
+                                       <color>
+                                          <Color red="0.9686274528503418" green="0.7137255072593689" blue="0.07450980693101883" opacity="0.5199999809265137" />
+                                       </color>
+                                    </DropShadow>
+                                 </effect>
+                              </Label>
+                              <TextField fx:id="tf_EditUniverName" alignment="CENTER" layoutX="63.0" layoutY="56.0" prefHeight="43.0" prefWidth="419.0" promptText="Nombre de la universidad" styleClass="custom-text-field" />
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane fx:id="EditAnswere_ap" disable="true" layoutX="636.0" layoutY="83.0" prefHeight="147.0" prefWidth="546.0" style="-fx-background-color: #39414e; -fx-background-radius: 25;">
+                           <effect>
+                              <DropShadow height="72.47" radius="36.9025" width="77.14">
+                                 <color>
+                                    <Color opacity="0.6200000047683716" />
+                                 </color>
+                              </DropShadow>
+                           </effect>
+                           <children>
+                              <Label layoutX="210.0" layoutY="14.0" text="Respuesta de IA" textFill="#ffbc21">
+                                 <font>
+                                    <Font name="Times New Roman" size="19.0" />
+                                 </font>
+                                 <effect>
+                                    <DropShadow>
+                                       <color>
+                                          <Color red="0.9686274528503418" green="0.7137255072593689" blue="0.07450980693101883" opacity="0.5199999809265137" />
+                                       </color>
+                                    </DropShadow>
+                                 </effect>
+                              </Label>
+                              <TextArea fx:id="ta_EditAnswereForIA" layoutX="15.0" layoutY="60.0" prefHeight="74.0" prefWidth="515.0">
+                                 <effect>
+                                    <InnerShadow choke="0.59" height="56.09" radius="27.545" width="56.09">
+                                       <color>
+                                          <Color red="0.2235294133424759" green="0.2549019753932953" blue="0.30588236451148987" />
+                                       </color>
+                                    </InnerShadow>
+                                 </effect>
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                              </TextArea>
+                              <Label layoutX="243.0" layoutY="44.0" text="Contenido:" textFill="WHITE">
+                                 <font>
+                                    <Font name="Times New Roman" size="13.0" />
+                                 </font>
+                                 <effect>
+                                    <DropShadow>
+                                       <color>
+                                          <Color red="1.0" green="1.0" blue="1.0" opacity="0.5227963924407959" />
+                                       </color>
+                                    </DropShadow>
+                                 </effect>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane layoutX="1238.0" layoutY="114.0" prefHeight="97.0" prefWidth="102.0" style="-fx-background-color: #283446; -fx-background-radius: 50;">
+                           <effect>
+                              <DropShadow height="67.79" radius="35.7325" width="77.14">
+                                 <color>
+                                    <Color opacity="0.6231002807617188" />
+                                 </color>
+                              </DropShadow>
+                           </effect>
+                           <children>
+                              <TextField fx:id="tf_UniversalID" alignment="CENTER" editable="false" layoutX="14.0" layoutY="11.0" prefHeight="74.0" prefWidth="74.0" promptText="ID" styleClass="custom-text-field" />
+                           </children>
+                        </AnchorPane>
+                        <Label layoutX="1207.0" layoutY="83.0" prefHeight="20.0" prefWidth="163.0" text="ID entidad seleccionada" textFill="#ffa100">
+                           <font>
+                              <Font name="Times New Roman Italic" size="16.0" />
+                           </font>
+                           <effect>
+                              <DropShadow height="22.22" radius="10.317499999999999" spread="0.18" width="21.05">
+                                 <color>
+                                    <Color red="1.0" green="0.843137264251709" />
+                                 </color>
+                              </DropShadow>
+                           </effect>
+                        </Label>
+                     </children></AnchorPane>
+               </content>
+            </Tab>
+          <Tab text="Usuarios">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="643.0" prefWidth="1382.0">
+                     <children>
+                        <AnchorPane layoutX="35.0" layoutY="45.0" prefHeight="502.0" prefWidth="304.0" style="-fx-background-color: #39414e; -fx-background-radius: 25;">
+                           <effect>
+                              <DropShadow height="67.79" radius="35.7325" width="77.14">
+                                 <color>
+                                    <Color opacity="0.6231002807617188" />
+                                 </color>
+                              </DropShadow>
+                           </effect>
+                           <children>
+                              <TextField fx:id="tf_UserName" layoutX="12.0" layoutY="317.0" prefHeight="43.0" prefWidth="266.0" promptText="Nombre" styleClass="custom-text-field" />
+                              <Label layoutX="14.0" layoutY="14.0" text="Agregar Usuario" textFill="#ffbc21">
+                                 <font>
+                                    <Font name="Times New Roman" size="30.0" />
+                                 </font>
+                                 <effect>
+                                    <DropShadow>
+                                       <color>
+                                          <Color red="0.9686274528503418" green="0.7137255072593689" blue="0.07450980693101883" opacity="0.5199999809265137" />
+                                       </color>
+                                    </DropShadow>
+                                 </effect>
+                              </Label>
+                              <Button fx:id="btn_createUser" layoutX="14.0" layoutY="444.0" mnemonicParsing="false" onAction="#AddNewUser" onMouseEntered="#FX" prefHeight="44.0" prefWidth="266.0" style="-fx-background-radius: 24; -fx-border-radius: 24; -fx-background-color: #05142b; -fx-border-color: #38547e;" text="Agregar" textFill="#ae7f0f">
+                                 <font>
+                                    <Font name="Times New Roman Italic" size="18.0" />
+                                 </font>
+                                 <effect>
+                                    <DropShadow height="35.04" radius="17.02" spread="0.06" width="35.04">
+                                       <color>
+                                          <Color red="0.16596491634845734" green="0.23763157427310944" blue="0.4526315927505493" />
+                                       </color>
+                                    </DropShadow>
+                                 </effect>
+                              </Button>
+                              <ChoiceBox fx:id="cbx_UniverIDtoAddUser" layoutX="15.0" layoutY="155.0" prefHeight="44.0" prefWidth="266.0" style="-fx-border-radius: 15; -fx-background-radius: 15;">
+                                 <effect>
+                                    <DropShadow height="31.53" radius="14.9725" spread="0.09" width="30.36">
+                                       <color>
+                                          <Color red="0.38823530077934265" green="0.27450981736183167" blue="0.0784313753247261" opacity="0.6800000071525574" />
+                                       </color>
+                                    </DropShadow>
+                                 </effect>
+                              </ChoiceBox>
+                              <Label layoutX="26.0" layoutY="136.0" text="Universidad:" textFill="WHITE">
+                                 <font>
+                                    <Font name="Times New Roman" size="15.0" />
+                                 </font>
+                                 <effect>
+                                    <DropShadow>
+                                       <color>
+                                          <Color red="1.0" green="1.0" blue="1.0" opacity="0.5227963924407959" />
+                                       </color>
+                                    </DropShadow>
+                                 </effect>
+                              </Label>
+                              <Label layoutX="68.0" layoutY="291.0" text="Datos de inicio de sesion:" textFill="WHITE">
+                                 <font>
+                                    <Font name="Times New Roman" size="15.0" />
+                                 </font>
+                                 <effect>
+                                    <DropShadow>
+                                       <color>
+                                          <Color red="1.0" green="1.0" blue="1.0" opacity="0.5227963924407959" />
+                                       </color>
+                                    </DropShadow>
+                                 </effect>
+                              </Label>
+                              <ChoiceBox fx:id="cbx_type" layoutX="15.0" layoutY="228.0" prefHeight="44.0" prefWidth="266.0" style="-fx-border-radius: 15; -fx-background-radius: 15;">
+                                 <effect>
+                                    <DropShadow height="31.53" radius="14.9725" spread="0.09" width="30.36">
+                                       <color>
+                                          <Color red="0.38823530077934265" green="0.27450981736183167" blue="0.0784313753247261" opacity="0.6800000071525574" />
+                                       </color>
+                                    </DropShadow>
+                                 </effect>
+                              </ChoiceBox>
+                              <Label layoutX="27.0" layoutY="207.0" text="Tipo:" textFill="WHITE">
+                                 <font>
+                                    <Font name="Times New Roman" size="15.0" />
+                                 </font>
+                                 <effect>
+                                    <DropShadow>
+                                       <color>
+                                          <Color red="1.0" green="1.0" blue="1.0" opacity="0.5227963924407959" />
+                                       </color>
+                                    </DropShadow>
+                                 </effect>
+                              </Label>
+                              <TextField fx:id="tf_user" layoutX="14.0" layoutY="375.0" prefHeight="43.0" prefWidth="266.0" promptText="Contraseña" styleClass="custom-text-field" />
+                              <TextField fx:id="tf_pass" layoutX="13.0" layoutY="83.0" prefHeight="43.0" prefWidth="266.0" promptText="Cedula" styleClass="custom-text-field" />
+                              <Label layoutX="29.0" layoutY="64.0" text="Identificacion:" textFill="WHITE">
+                                 <font>
+                                    <Font name="Times New Roman" size="15.0" />
+                                 </font>
+                                 <effect>
+                                    <DropShadow>
+                                       <color>
+                                          <Color red="1.0" green="1.0" blue="1.0" opacity="0.5227963924407959" />
+                                       </color>
+                                    </DropShadow>
+                                 </effect>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                        <TableView fx:id="users_tv" layoutX="800.0" layoutY="93.0" onMouseClicked="#GetUserData" prefHeight="392.0" prefWidth="558.0" style="-fx-background-color: #535b66; -fx-background-radius: 10;" stylesheets="@addall.css">
+                           <columns>
+                              <TableColumn fx:id="user_id" prefWidth="75.0" text="ID" />
+                              <TableColumn fx:id="university_id" prefWidth="93.60003662109375" text="University ID" />
+                              <TableColumn fx:id="name" prefWidth="276.0" text="Nombre" />
+                              <TableColumn fx:id="type" minWidth="0.0" prefWidth="108.79997558593755" text="Tipo" />
+                           </columns>
+                        </TableView>
+                        <AnchorPane layoutX="382.0" layoutY="45.0" prefHeight="500.0" prefWidth="343.0" style="-fx-background-color: #39414e; -fx-background-radius: 25;">
+                           <effect>
+                              <DropShadow height="67.79" radius="35.7325" width="77.14">
+                                 <color>
+                                    <Color opacity="0.6231002807617188" />
+                                 </color>
+                              </DropShadow>
+                           </effect>
+                           <children>
+                              <TextField fx:id="tf_userEditName" layoutX="15.0" layoutY="82.0" prefHeight="44.0" prefWidth="307.0" promptText="Nombre de la persona" styleClass="custom-text-field" />
+                              <Label layoutX="14.0" layoutY="14.0" text="Editar Usuario" textFill="#ffbc21">
+                                 <font>
+                                    <Font name="Times New Roman" size="30.0" />
+                                 </font>
+                                 <effect>
+                                    <DropShadow>
+                                       <color>
+                                          <Color red="0.9686274528503418" green="0.7137255072593689" blue="0.07450980693101883" opacity="0.5199999809265137" />
+                                       </color>
+                                    </DropShadow>
+                                 </effect>
+                              </Label>
+                              <Button fx:id="btn_editUserInfo" disable="true" layoutX="9.0" layoutY="442.0" mnemonicParsing="false" onAction="#DoUserEdit" onMouseEntered="#FX" prefHeight="44.0" prefWidth="321.0" style="-fx-background-radius: 24; -fx-border-radius: 24; -fx-background-color: #05142b; -fx-border-color: #38547e;" text="Guardar cambios" textFill="#ae7f0f">
+                                 <font>
+                                    <Font name="Times New Roman Italic" size="18.0" />
+                                 </font>
+                                 <effect>
+                                    <DropShadow height="35.04" radius="17.02" spread="0.06" width="35.04">
+                                       <color>
+                                          <Color red="0.16596491634845734" green="0.23763157427310944" blue="0.4526315927505493" />
+                                       </color>
+                                    </DropShadow>
+                                 </effect>
+                              </Button>
+                              <ChoiceBox fx:id="cbx_UniverIDtoEdit" layoutX="12.0" layoutY="259.0" prefHeight="44.0" prefWidth="312.0" style="-fx-border-radius: 15; -fx-background-radius: 15;">
+                                 <effect>
+                                    <DropShadow height="31.53" radius="14.9725" spread="0.09" width="30.36">
+                                       <color>
+                                          <Color red="0.38823530077934265" green="0.27450981736183167" blue="0.0784313753247261" opacity="0.6800000071525574" />
+                                       </color>
+                                    </DropShadow>
+                                 </effect>
+                              </ChoiceBox>
+                              <Label layoutX="23.0" layoutY="240.0" text="Universidad:" textFill="WHITE">
+                                 <font>
+                                    <Font name="Times New Roman" size="15.0" />
+                                 </font>
+                                 <effect>
+                                    <DropShadow>
+                                       <color>
+                                          <Color red="1.0" green="1.0" blue="1.0" opacity="0.5227963924407959" />
+                                       </color>
+                                    </DropShadow>
+                                 </effect>
+                              </Label>
+                              <ChoiceBox fx:id="cbx_typeToEdit" layoutX="12.0" layoutY="341.0" prefHeight="44.0" prefWidth="316.0" style="-fx-border-radius: 15; -fx-background-radius: 15;">
+                                 <effect>
+                                    <DropShadow height="31.53" radius="14.9725" spread="0.09" width="30.36">
+                                       <color>
+                                          <Color red="0.38823530077934265" green="0.27450981736183167" blue="0.0784313753247261" opacity="0.6800000071525574" />
+                                       </color>
+                                    </DropShadow>
+                                 </effect>
+                              </ChoiceBox>
+                              <Label layoutX="24.0" layoutY="320.0" text="Tipo:" textFill="WHITE">
+                                 <font>
+                                    <Font name="Times New Roman" size="15.0" />
+                                 </font>
+                                 <effect>
+                                    <DropShadow>
+                                       <color>
+                                          <Color red="1.0" green="1.0" blue="1.0" opacity="0.5227963924407959" />
+                                       </color>
+                                    </DropShadow>
+                                 </effect>
+                              </Label>
+                              <TextField fx:id="tf_userEditCed" layoutX="15.0" layoutY="151.0" prefHeight="44.0" prefWidth="310.0" promptText="Cedula" styleClass="custom-text-field" />
+                              <Label layoutX="31.0" layoutY="132.0" text="Identificacion:" textFill="WHITE">
+                                 <font>
+                                    <Font name="Times New Roman" size="15.0" />
+                                 </font>
+                                 <effect>
+                                    <DropShadow>
+                                       <color>
+                                          <Color red="1.0" green="1.0" blue="1.0" opacity="0.5227963924407959" />
+                                       </color>
+                                    </DropShadow>
+                                 </effect>
+                              </Label>
+                              <Label layoutX="30.0" layoutY="63.0" text="Nombre:" textFill="WHITE">
+                                 <font>
+                                    <Font name="Times New Roman" size="15.0" />
+                                 </font>
+                                 <effect>
+                                    <DropShadow>
+                                       <color>
+                                          <Color red="1.0" green="1.0" blue="1.0" opacity="0.5227963924407959" />
+                                       </color>
+                                    </DropShadow>
+                                 </effect>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                        <Button fx:id="btn_deleteUser" disable="true" layoutX="796.0" layoutY="501.0" mnemonicParsing="false" onAction="#DeleteUser" onMouseEntered="#FX" prefHeight="44.0" prefWidth="565.0" style="-fx-background-radius: 24; -fx-border-radius: 24; -fx-background-color: #05142b; -fx-border-color: #38547e;" text="Eliminar usuario seleccionado" textFill="#ae7f0f">
+                           <font>
+                              <Font name="Times New Roman Italic" size="18.0" />
+                           </font>
+                           <effect>
+                              <DropShadow height="35.04" radius="17.02" spread="0.06" width="35.04">
+                                 <color>
+                                    <Color red="0.16596491634845734" green="0.23763157427310944" blue="0.4526315927505493" />
+                                 </color>
+                              </DropShadow>
+                           </effect>
+                        </Button>
+                        <Label layoutX="1025.0" layoutY="45.0" text="Usuarios" textFill="WHITE">
+                           <font>
+                              <Font name="Times New Roman" size="30.0" />
+                           </font>
+                           <effect>
+                              <DropShadow>
+                                 <color>
+                                    <Color red="1.0" green="1.0" blue="1.0" opacity="0.5199999809265137" />
+                                 </color>
+                              </DropShadow>
+                           </effect>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Matriculas">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="students_tv" layoutX="124.0" layoutY="39.0" onMouseClicked="#GetStudentData" prefHeight="267.0" prefWidth="417.0" style="-fx-background-color: #535b66; -fx-background-radius: 10;" stylesheets="@addall.css">
+                           <columns>
+                              <TableColumn fx:id="tab_studentID" editable="false" prefWidth="51.19997787475586" sortable="false" text="ID" />
+                              <TableColumn fx:id="tab_subUniversityID" editable="false" minWidth="0.0" prefWidth="98.40005493164062" sortable="false" text="ID Universidad" />
+                              <TableColumn fx:id="tab_studentName" editable="false" minWidth="0.0" prefWidth="264.7999725341797" sortable="false" text="Nombre" />
+                           </columns>
+                        </TableView>
+                        <AnchorPane layoutX="713.0" layoutY="58.0" prefHeight="193.0" prefWidth="343.0" style="-fx-background-color: #39414e; -fx-background-radius: 25;">
+                           <effect>
+                              <DropShadow height="67.79" radius="35.7325" width="77.14">
+                                 <color>
+                                    <Color opacity="0.6231002807617188" />
+                                 </color>
+                              </DropShadow>
+                           </effect>
+                           <children>
+                              <Label layoutX="41.0" layoutY="14.0" text="Matricular Estudiante" textFill="#ffbc21">
+                                 <font>
+                                    <Font name="Times New Roman" size="30.0" />
+                                 </font>
+                                 <effect>
+                                    <DropShadow>
+                                       <color>
+                                          <Color red="0.9686274528503418" green="0.7137255072593689" blue="0.07450980693101883" opacity="0.5199999809265137" />
+                                       </color>
+                                    </DropShadow>
+                                 </effect>
+                              </Label>
+                              <Button fx:id="btn_createRegistration" layoutX="116.0" layoutY="132.0" mnemonicParsing="false" onAction="#CreateRegistration" onMouseEntered="#FX" prefHeight="44.0" prefWidth="111.0" style="-fx-background-radius: 24; -fx-border-radius: 24; -fx-background-color: #05142b; -fx-border-color: #38547e;" text="Matricular" textFill="#ae7f0f">
+                                 <font>
+                                    <Font name="Times New Roman Italic" size="18.0" />
+                                 </font>
+                                 <effect>
+                                    <DropShadow height="35.04" radius="17.02" spread="0.06" width="35.04">
+                                       <color>
+                                          <Color red="0.16596491634845734" green="0.23763157427310944" blue="0.4526315927505493" />
+                                       </color>
+                                    </DropShadow>
+                                 </effect>
+                              </Button>
+                              <TextField fx:id="tf_subStudentID" alignment="CENTER" layoutX="264.0" layoutY="75.0" prefHeight="43.0" prefWidth="50.0" promptText="ID" styleClass="custom-text-field" />
+                              <Label layoutX="171.0" layoutY="86.0" text="Estudiante:" textFill="WHITE">
+                                 <font>
+                                    <Font name="Times New Roman" size="19.0" />
+                                 </font>
+                                 <effect>
+                                    <DropShadow>
+                                       <color>
+                                          <Color red="1.0" green="1.0" blue="1.0" opacity="0.5227963924407959" />
+                                       </color>
+                                    </DropShadow>
+                                 </effect>
+                              </Label>
+                              <Label layoutX="25.0" layoutY="86.0" text="Curso:" textFill="WHITE">
+                                 <font>
+                                    <Font name="Times New Roman" size="19.0" />
+                                 </font>
+                                 <effect>
+                                    <DropShadow>
+                                       <color>
+                                          <Color red="1.0" green="1.0" blue="1.0" opacity="0.5227963924407959" />
+                                       </color>
+                                    </DropShadow>
+                                 </effect>
+                              </Label>
+                              <TextField fx:id="tf_subCourseID" alignment="CENTER" layoutX="84.0" layoutY="75.0" prefHeight="43.0" prefWidth="50.0" promptText="ID" styleClass="custom-text-field" />
+                           </children>
+                        </AnchorPane>
+                        <Label layoutX="282.0" layoutY="9.0" text="Estudiantes" textFill="WHITE">
+                           <font>
+                              <Font name="Times New Roman" size="22.0" />
+                           </font>
+                           <effect>
+                              <DropShadow>
+                                 <color>
+                                    <Color red="1.0" green="1.0" blue="1.0" opacity="0.5199999809265137" />
+                                 </color>
+                              </DropShadow>
+                           </effect>
+                        </Label>
+                        <Label layoutX="302.0" layoutY="317.0" text="Cursos" textFill="WHITE">
+                           <font>
+                              <Font name="Times New Roman" size="22.0" />
+                           </font>
+                           <effect>
+                              <DropShadow>
+                                 <color>
+                                    <Color red="1.0" green="1.0" blue="1.0" opacity="0.5199999809265137" />
+                                 </color>
+                              </DropShadow>
+                           </effect>
+                        </Label>
+                        <TableView fx:id="coursesToSubscribe_tv" layoutX="14.0" layoutY="344.0" onMouseClicked="#GetCourseData" prefHeight="261.0" prefWidth="643.0" style="-fx-background-color: #535b66; -fx-background-radius: 10;" stylesheets="@addall.css">
+                           <columns>
+                              <TableColumn fx:id="tab_subCourseID" editable="false" prefWidth="43.200008392333984" sortable="false" text="ID" />
+                              <TableColumn fx:id="tab_subCourseProfID" editable="false" minWidth="0.0" prefWidth="78.39996337890625" sortable="false" text="ID Profesor" />
+                              <TableColumn fx:id="tab_subCourseDepartID" editable="false" minWidth="0.0" prefWidth="106.4000244140625" sortable="false" text="ID Departamento" />
+                              <TableColumn fx:id="tab_subCourseName" editable="false" minWidth="0.0" prefWidth="211.2000274658203" sortable="false" text="Nombre" />
+                              <TableColumn fx:id="tab_subCourseInfo" editable="false" minWidth="0.0" prefWidth="197.60006713867188" sortable="false" text="Informacion" />
+                           </columns>
+                        </TableView>
+                        <TableView fx:id="registration_tv" layoutX="1109.0" layoutY="59.0" onMouseClicked="#GetRegistrationData" prefHeight="508.0" prefWidth="262.0" style="-fx-background-color: #535b66; -fx-background-radius: 10;" stylesheets="@addall.css">
+                           <columns>
+                              <TableColumn fx:id="tab_registrationID" editable="false" prefWidth="51.19997787475586" sortable="false" text="ID" />
+                              <TableColumn fx:id="tab_SubCourseID" editable="false" minWidth="0.0" prefWidth="98.40005493164062" sortable="false" text="ID Curso" />
+                              <TableColumn fx:id="tab_SubStudentID" editable="false" minWidth="0.0" prefWidth="108.0" sortable="false" text="ID Estudiante" />
+                           </columns>
+                        </TableView>
+                        <Label layoutX="1176.0" layoutY="17.0" text="Matriculas" textFill="WHITE">
+                           <font>
+                              <Font name="Times New Roman" size="30.0" />
+                           </font>
+                           <effect>
+                              <DropShadow>
+                                 <color>
+                                    <Color red="1.0" green="1.0" blue="1.0" opacity="0.5199999809265137" />
+                                 </color>
+                              </DropShadow>
+                           </effect>
+                        </Label>
+                        <AnchorPane fx:id="editRegistration_ap" disable="true" layoutX="713.0" layoutY="387.0" prefHeight="193.0" prefWidth="343.0" style="-fx-background-color: #39414e; -fx-background-radius: 25;">
+                           <effect>
+                              <DropShadow height="67.79" radius="35.7325" width="77.14">
+                                 <color>
+                                    <Color opacity="0.6231002807617188" />
+                                 </color>
+                              </DropShadow>
+                           </effect>
+                           <children>
+                              <Label layoutX="73.0" layoutY="14.0" text="Editar Matricula" textFill="#ffbc21">
+                                 <font>
+                                    <Font name="Times New Roman" size="30.0" />
+                                 </font>
+                                 <effect>
+                                    <DropShadow>
+                                       <color>
+                                          <Color red="0.9686274528503418" green="0.7137255072593689" blue="0.07450980693101883" opacity="0.5199999809265137" />
+                                       </color>
+                                    </DropShadow>
+                                 </effect>
+                              </Label>
+                              <Button fx:id="btn_editRegistration" layoutX="116.0" layoutY="132.0" mnemonicParsing="false" onAction="#EditRegistration" onMouseEntered="#FX" prefHeight="44.0" prefWidth="111.0" style="-fx-background-radius: 24; -fx-border-radius: 24; -fx-background-color: #05142b; -fx-border-color: #38547e;" text="Editar" textFill="#ae7f0f">
+                                 <font>
+                                    <Font name="Times New Roman Italic" size="18.0" />
+                                 </font>
+                                 <effect>
+                                    <DropShadow height="35.04" radius="17.02" spread="0.06" width="35.04">
+                                       <color>
+                                          <Color red="0.16596491634845734" green="0.23763157427310944" blue="0.4526315927505493" />
+                                       </color>
+                                    </DropShadow>
+                                 </effect>
+                              </Button>
+                              <TextField fx:id="tf_subEditStudentID" alignment="CENTER" layoutX="264.0" layoutY="75.0" prefHeight="43.0" prefWidth="50.0" promptText="ID" styleClass="custom-text-field" />
+                              <Label layoutX="171.0" layoutY="86.0" text="Estudiante:" textFill="WHITE">
+                                 <font>
+                                    <Font name="Times New Roman" size="19.0" />
+                                 </font>
+                                 <effect>
+                                    <DropShadow>
+                                       <color>
+                                          <Color red="1.0" green="1.0" blue="1.0" opacity="0.5227963924407959" />
+                                       </color>
+                                    </DropShadow>
+                                 </effect>
+                              </Label>
+                              <Label layoutX="25.0" layoutY="86.0" text="Curso:" textFill="WHITE">
+                                 <font>
+                                    <Font name="Times New Roman" size="19.0" />
+                                 </font>
+                                 <effect>
+                                    <DropShadow>
+                                       <color>
+                                          <Color red="1.0" green="1.0" blue="1.0" opacity="0.5227963924407959" />
+                                       </color>
+                                    </DropShadow>
+                                 </effect>
+                              </Label>
+                              <TextField fx:id="tf_subEditCourseID" alignment="CENTER" layoutX="84.0" layoutY="75.0" prefHeight="43.0" prefWidth="50.0" promptText="ID" styleClass="custom-text-field" />
+                           </children>
+                        </AnchorPane>
+                        <Button fx:id="btn_deleteRegistration" disable="true" layoutX="1147.0" layoutY="580.0" mnemonicParsing="false" onAction="#DeleteRegistration" onMouseEntered="#FX" prefHeight="44.0" prefWidth="186.0" style="-fx-background-radius: 24; -fx-border-radius: 24; -fx-background-color: #05142b; -fx-border-color: #38547e;" text="Eliminar: ?" textFill="#ae7f0f">
+                           <font>
+                              <Font name="Times New Roman Italic" size="18.0" />
+                           </font>
+                           <effect>
+                              <DropShadow height="35.04" radius="17.02" spread="0.06" width="35.04">
+                                 <color>
+                                    <Color red="0.16596491634845734" green="0.23763157427310944" blue="0.4526315927505493" />
+                                 </color>
+                              </DropShadow>
+                           </effect>
+                        </Button>
+                     </children></AnchorPane>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

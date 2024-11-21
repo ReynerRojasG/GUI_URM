@@ -1,0 +1,30 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+    -fx-background-color: #222831;
+}
+/* Estilo del TextField */
+.custom-text-field {
+    -fx-background-color: #3b4351; /* Color de fondo */
+    -fx-text-fill: #ffbc21; /* Color del texto */
+    -fx-font-size: 18px; /* Tamaño de la fuente */
+    -fx-padding: 5px; /* Relleno interno */
+    -fx-border-color: #172740; /* Color del borde */
+    -fx-border-width: 3px; /* Grosor del borde */
+    -fx-border-radius: 15px; /* Bordes redondeados */
+    -fx-background-radius: 17px; /* Bordes del fondo redondeados */
+    -fx-prompt-text-fill: #FFFF00; /* Color del texto de sugerencia */
+}
+
+/* Estilo del foco */
+.custom-text-field:focused {
+    -fx-border-color: #ffbc21; /* Color del borde cuando el TextField está enfocado */
+    -fx-background-color: #3b4351; /* Color de fondo cuando está enfocado */
+}
+
+/* Estilo del hover */
+.custom-text-field:hover {
+    -fx-border-color: #634614; /* Color del borde cuando el TextField está en hover */
+}

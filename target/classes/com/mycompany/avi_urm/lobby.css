@@ -1,0 +1,18 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+    -fx-background-color: #222831;
+}
+.label-hover:hover {
+    -fx-text-fill: orange; /* Color del texto cuando se pasa el ratón */
+}
+.choice-box {
+    -fx-background-color: #274769; /* Color de fondo */
+    -fx-border-color: #ffbc21; /* Color del borde */
+    -fx-border-width: 2px; /* Grosor del borde */
+    -fx-padding: 5px; /* Relleno interno */
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 14px; /* Tamaño de la fuente */
+}

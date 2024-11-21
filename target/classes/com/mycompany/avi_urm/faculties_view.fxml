@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Polygon?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="faculties_ap" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="770.0" prefWidth="1400.0" styleClass="mainFxmlClass" stylesheets="@faculties_view.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.avi_urm.Faculties_viewController">
+   <children>
+      <VBox layoutX="111.0" layoutY="88.0" prefHeight="679.0" prefWidth="1178.0">
+         <children>
+            <Label fx:id="titleLabel" maxWidth="1.7976931348623157E308" prefHeight="78.0" prefWidth="1178.0" styleClass="title-label" text="Listado de Facultades" />
+            <ScrollPane fx:id="faculties_vbox" fitToWidth="true" hbarPolicy="NEVER" prefHeight="556.0" prefWidth="1178.0">
+               <content>
+                  <VBox fx:id="facultiesContainer" spacing="15.0" />
+               </content>
+            </ScrollPane>
+         </children>
+      </VBox>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="85.0" strokeType="INSIDE" width="1400.0">
+         <fill>
+            <LinearGradient endX="0.47727268392389466" endY="1.0" startX="0.47727271914482117">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.0235294122248888" green="0.08235294371843338" blue="0.1764705926179886" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.006729475100942127">
+                     <color>
+                        <Color red="0.0784313753247261" green="0.1764705926179886" blue="0.2862745225429535" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.019607843831181526" green="0.0784313753247261" blue="0.16862745583057404" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+         <stroke>
+            <LinearGradient cycleMethod="REFLECT" endX="1.0" startX="1.0" startY="0.20075759065873688">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.0235294122248888" green="0.08235294371843338" blue="0.1764705926179886" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.006729475100942127">
+                     <color>
+                        <Color red="0.0784313753247261" green="0.1764705926179886" blue="0.2862745225429535" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.019607843831181526" green="0.0784313753247261" blue="0.16862745583057404" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </stroke>
+      </Rectangle>
+      <Label fx:id="lbl_minimize1" layoutX="1275.0" layoutY="5.0" onMouseClicked="#MinimizeWindow" onMouseEntered="#FX" prefHeight="60.0" prefWidth="31.0" styleClass="label-hover" stylesheets="@lobby.css" text="-">
+         <font>
+            <Font name="System Bold" size="51.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="0.7424241990754099" endY="0.8598484830422835" startX="0.7424241846257991" startY="0.09090907645948006">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.38823530077934265" green="0.27450981736183167" blue="0.0784313753247261" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="0.7372549176216125" blue="0.12941177189350128" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <effect>
+            <DropShadow height="16.35" radius="7.0975" width="14.04">
+               <color>
+                  <Color red="0.7200000286102295" green="0.5690400004386902" blue="0.18719999492168427" opacity="0.626139760017395" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Label>
+      <Label fx:id="lbl_exit1" layoutX="1328.0" layoutY="5.0" onMouseClicked="#GoBack" onMouseEntered="#FX" prefHeight="74.0" prefWidth="31.0" styleClass="label-hover" stylesheets="@lobby.css" text="&lt;">
+         <font>
+            <Font name="System Bold" size="51.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="0.7424241990754099" endY="0.8598484830422835" startX="0.7424241846257991" startY="0.09090907645948006">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.38823530077934265" green="0.27450981736183167" blue="0.0784313753247261" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="0.7372549176216125" blue="0.12941177189350128" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <effect>
+            <DropShadow height="16.35" radius="7.0975" width="14.04">
+               <color>
+                  <Color red="0.7200000286102295" green="0.5690400004386902" blue="0.18719999492168427" opacity="0.626139760017395" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Label>
+      <Polygon fill="#38547e" layoutX="-1176.0" layoutY="-346.0" opacity="0.13" points="1991.199951171875, 429.1999816894531, 1575.60009765625, 402.0, 1442.0, 416.3999938964844, 1360.4000244140625, 389.0, 1272.4000244140625, 416.3999938964844, 1176.4000244140625, 389.0, 1176.4000244140625, 429.1999816894531" stroke="#38547e" strokeType="INSIDE" />
+      <Label layoutX="27.0" layoutY="15.0" prefHeight="55.0" prefWidth="322.0" text="Sedes y Facultades">
+         <font>
+            <Font name="Times New Roman" size="42.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="0.7424241990754099" endY="0.8598484830422835" startX="0.7424241846257991">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.38823530077934265" green="0.27450981736183167" blue="0.0784313753247261" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="0.7372549176216125" blue="0.12941177189350128" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <effect>
+            <DropShadow height="51.42" radius="31.0575" width="74.81">
+               <color>
+                  <Color red="0.8117647171020508" green="0.6745098233222961" blue="0.2666666805744171" opacity="0.47999998927116394" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Label>
+   </children>
+</AnchorPane>

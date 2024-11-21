@@ -1,0 +1,68 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+    -fx-background-color: #222831;
+}
+/* Estilo del TextField */
+.custom-text-field {
+    -fx-background-color: #535b66; /* Color de fondo */
+    -fx-text-fill: #ffbc21; /* Color del texto */
+    -fx-font-size: 18px; /* Tamaño de la fuente */
+    -fx-padding: 5px; /* Relleno interno */
+    -fx-border-color: #535b66; /* Color del borde */
+    -fx-border-width: 3px; /* Grosor del borde */
+    -fx-border-radius: 25px; /* Bordes redondeados */
+    -fx-background-radius: 27px; /* Bordes del fondo redondeados */
+    -fx-prompt-text-fill: #ae7f0f; /* Color del texto de sugerencia */
+}
+
+/* Estilo del foco */
+.custom-text-field:focused {
+    -fx-border-color: #ffbc21; /* Color del borde cuando el TextField está enfocado */
+    -fx-background-color: #535b66; /* Color de fondo cuando está enfocado */
+}
+
+/* Estilo del hover */
+.custom-text-field:hover {
+    -fx-border-color: #634614; /* Color del borde cuando el TextField está en hover */
+}
+
+.choice-box {
+    -fx-background-color: #535b66; /* Color de fondo */
+    -fx-border-color: #ffbc21; /* Color del borde */
+    -fx-border-width: 2px; /* Grosor del borde */
+    -fx-padding: 5px; /* Relleno interno */
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 14px; /* Tamaño de la fuente */
+}
+.tab-pane .tab-header-background {
+    -fx-background-color: #2E3B4E; /* Color de fondo para el área de encabezado */ 
+}
+.tab-pane .tab-header-area {
+    -fx-padding: 2px;
+}
+/* Estilo para las pestañas (Tab) */
+.tab {
+    -fx-background-color: #3D5A7E; /* Fondo de pestañas */
+    -fx-border-color: transparent; /* Sin borde por defecto */
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+}
+.tab-pane:focused {
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+}
+/* Estilo para la pestaña seleccionada */
+.tab:selected {
+    -fx-background-color:   #0d2c5b;
+    -fx-border-color: #ffbc21; /* Borde para destacar la pestaña activa */
+    -fx-font-weight: bold; /* Texto en negrita */
+}
+.tab:selected .tab-label {
+    -fx-text-fill: white; /* Texto blanco */
+}
+.tab .tab-label {
+    -fx-text-fill: white; /* Texto blanco */
+}

@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Polygon?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="770.0" prefWidth="1400.0" styleClass="mainFxmlClass" stylesheets="@addall.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.avi_urm.StudentsPortalController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="85.0" strokeType="INSIDE" width="1403.0">
+         <fill>
+            <LinearGradient endX="0.47727268392389466" endY="1.0" startX="0.47727271914482117">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.0235294122248888" green="0.08235294371843338" blue="0.1764705926179886" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.006729475100942127">
+                     <color>
+                        <Color red="0.0784313753247261" green="0.1764705926179886" blue="0.2862745225429535" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.019607843831181526" green="0.0784313753247261" blue="0.16862745583057404" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+         <stroke>
+            <LinearGradient cycleMethod="REFLECT" endX="1.0" startX="1.0" startY="0.20075759065873688">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.0235294122248888" green="0.08235294371843338" blue="0.1764705926179886" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.006729475100942127">
+                     <color>
+                        <Color red="0.0784313753247261" green="0.1764705926179886" blue="0.2862745225429535" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.019607843831181526" green="0.0784313753247261" blue="0.16862745583057404" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </stroke>
+      </Rectangle>
+      <Label fx:id="lbl_minimize" layoutX="1278.0" layoutY="5.0" onMouseClicked="#MinimizeWindow" onMouseEntered="#FX" prefHeight="60.0" prefWidth="31.0" styleClass="label-hover" stylesheets="@lobby.css" text="-">
+         <font>
+            <Font name="System Bold" size="51.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="0.7424241990754099" endY="0.8598484830422835" startX="0.7424241846257991" startY="0.09090907645948006">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.38823530077934265" green="0.27450981736183167" blue="0.0784313753247261" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="0.7372549176216125" blue="0.12941177189350128" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <effect>
+            <DropShadow height="16.35" radius="7.0975" width="14.04">
+               <color>
+                  <Color red="0.7200000286102295" green="0.5690400004386902" blue="0.18719999492168427" opacity="0.626139760017395" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Label>
+      <Label fx:id="lbl_exit" layoutX="1331.0" layoutY="5.0" onMouseClicked="#GoBack" onMouseEntered="#FX" prefHeight="74.0" prefWidth="31.0" styleClass="label-hover" stylesheets="@lobby.css" text="&lt;">
+         <font>
+            <Font name="System Bold" size="51.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="0.7424241990754099" endY="0.8598484830422835" startX="0.7424241846257991" startY="0.09090907645948006">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.38823530077934265" green="0.27450981736183167" blue="0.0784313753247261" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="0.7372549176216125" blue="0.12941177189350128" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <effect>
+            <DropShadow height="16.35" radius="7.0975" width="14.04">
+               <color>
+                  <Color red="0.7200000286102295" green="0.5690400004386902" blue="0.18719999492168427" opacity="0.626139760017395" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Label>
+      <Polygon fill="#38547e" layoutX="-1173.0" layoutY="-346.0" opacity="0.13" points="1991.199951171875, 429.1999816894531, 1575.60009765625, 402.0, 1442.0, 416.3999938964844, 1360.4000244140625, 389.0, 1272.4000244140625, 416.3999938964844, 1176.4000244140625, 389.0, 1176.4000244140625, 429.1999816894531" stroke="#38547e" strokeType="INSIDE" />
+      <Label layoutX="30.0" layoutY="15.0" prefHeight="55.0" prefWidth="293.0" text="Students Portal">
+         <font>
+            <Font name="Times New Roman" size="42.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="0.7424241990754099" endY="0.8598484830422835" startX="0.7424241846257991">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.38823530077934265" green="0.27450981736183167" blue="0.0784313753247261" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="0.7372549176216125" blue="0.12941177189350128" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <effect>
+            <DropShadow height="51.42" radius="31.0575" width="74.81">
+               <color>
+                  <Color red="0.8117647171020508" green="0.6745098233222961" blue="0.2666666805744171" opacity="0.47999998927116394" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Label>
+      <Label fx:id="lbl_info" layoutX="14.0" layoutY="736.0" prefHeight="20.0" prefWidth="714.0" textFill="#a41d1d">
+         <font>
+            <Font name="Times New Roman Italic" size="18.0" />
+         </font>
+         <effect>
+            <DropShadow height="37.38" radius="46.86" spread="0.18" width="152.06">
+               <color>
+                  <Color red="1.0" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Label>
+      <AnchorPane layoutX="9.0" layoutY="435.0" prefHeight="291.0" prefWidth="662.0" style="-fx-background-color: #39414e; -fx-background-radius: 25;">
+         <effect>
+            <DropShadow height="67.79" radius="35.7325" width="77.14">
+               <color>
+                  <Color opacity="0.6231002807617188" />
+               </color>
+            </DropShadow>
+         </effect>
+         <children>
+            <Label alignment="CENTER" layoutX="212.0" layoutY="25.0" prefHeight="34.0" prefWidth="237.0" text="Tus asignaciones" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman" size="30.0" />
+               </font>
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" opacity="0.5227963924407959" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Label>
+            <TableView fx:id="Assignment_tv" layoutX="15.0" layoutY="67.0" onMouseClicked="#GetAssignmentData" prefHeight="210.0" prefWidth="630.0" style="-fx-background-color: #535b66; -fx-background-radius: 10;" stylesheets="@addall.css">
+               <columns>
+                  <TableColumn fx:id="tab_assignmentID" editable="false" prefWidth="43.200008392333984" sortable="false" text="ID" />
+                  <TableColumn fx:id="tab_assignmentCourse" editable="false" minWidth="0.0" prefWidth="72.79998779296875" sortable="false" text="Curso ID" />
+                  <TableColumn fx:id="tab_assignmentDescription" editable="false" minWidth="0.0" prefWidth="292.0000419616699" sortable="false" text="Descripcion" />
+                  <TableColumn fx:id="tab_assignmentSDate" editable="false" minWidth="0.0" prefWidth="118.39996337890625" sortable="false" text="Inicio" />
+                  <TableColumn fx:id="tab_assignmentFDate" editable="false" minWidth="0.0" prefWidth="111.2000732421875" sortable="false" text="Fin" />
+               </columns>
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+            </TableView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="8.0" layoutY="105.0" prefHeight="317.0" prefWidth="326.0" style="-fx-background-color: #39414e; -fx-background-radius: 25;">
+         <effect>
+            <DropShadow height="67.79" radius="35.7325" width="77.14">
+               <color>
+                  <Color opacity="0.6231002807617188" />
+               </color>
+            </DropShadow>
+         </effect>
+         <children>
+            <Label alignment="CENTER" layoutX="122.0" layoutY="151.0" prefHeight="31.0" prefWidth="78.0" text="Fecha:" textFill="WHITE" textOverrun="CLIP">
+               <font>
+                  <Font name="Times New Roman" size="24.0" />
+               </font>
+               <effect>
+                  <DropShadow height="63.12" radius="33.9825" width="74.81">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" opacity="0.47999998927116394" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Label>
+            <Label alignment="CENTER" layoutX="121.0" layoutY="66.0" prefHeight="31.0" prefWidth="88.0" text="Archivo:" textFill="WHITE" textOverrun="CLIP">
+               <font>
+                  <Font name="Times New Roman" size="24.0" />
+               </font>
+               <effect>
+                  <DropShadow height="63.12" radius="33.9825" width="74.81">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" opacity="0.47999998927116394" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Label>
+            <TextField fx:id="tf_fileName" alignment="CENTER" layoutX="14.0" layoutY="97.0" prefHeight="43.0" prefWidth="294.0" styleClass="custom-text-field" />
+            <TextField fx:id="tf_dateSubmission" alignment="CENTER" layoutX="96.0" layoutY="182.0" prefHeight="43.0" prefWidth="138.0" promptText="DD/MM/YYYY" styleClass="custom-text-field" />
+            <Label alignment="CENTER" layoutX="81.0" layoutY="14.0" prefHeight="39.0" prefWidth="160.0" text="Subir Entrega">
+               <font>
+                  <Font name="Times New Roman" size="27.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="0.7424241990754099" endY="0.8598484830422835" startX="0.7424241846257991">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.38823530077934265" green="0.27450981736183167" blue="0.0784313753247261" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" green="0.7372549176216125" blue="0.12941177189350128" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+               <effect>
+                  <DropShadow height="23.35" radius="10.5875">
+                     <color>
+                        <Color red="0.8100000023841858" green="0.624239981174469" blue="0.11339999735355377" opacity="0.6808510422706604" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Label>
+            <Button fx:id="btn_AddAssig" layoutX="94.0" layoutY="257.0" mnemonicParsing="false" onAction="#CreateNewSubmission" onMouseEntered="#FX" prefHeight="40.0" prefWidth="134.0" style="-fx-background-radius: 24; -fx-border-radius: 24; -fx-background-color: #05142b; -fx-border-color: #38547e;" text="Entregar" textFill="#ae7f0f">
+               <font>
+                  <Font name="Times New Roman Italic" size="18.0" />
+               </font>
+               <effect>
+                  <DropShadow height="35.04" radius="17.02" spread="0.06" width="35.04">
+                     <color>
+                        <Color red="0.16596491634845734" green="0.23763157427310944" blue="0.4526315927505493" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="editSubmission_ap" disable="true" layoutX="344.0" layoutY="107.0" prefHeight="317.0" prefWidth="326.0" style="-fx-background-color: #39414e; -fx-background-radius: 25;">
+         <effect>
+            <DropShadow height="67.79" radius="35.7325" width="77.14">
+               <color>
+                  <Color opacity="0.6231002807617188" />
+               </color>
+            </DropShadow>
+         </effect>
+         <children>
+            <Label alignment="CENTER" layoutX="117.0" layoutY="152.0" prefHeight="31.0" prefWidth="88.0" text="Fecha:" textFill="WHITE" textOverrun="CLIP">
+               <font>
+                  <Font name="Times New Roman" size="24.0" />
+               </font>
+               <effect>
+                  <DropShadow height="63.12" radius="33.9825" width="74.81">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" opacity="0.47999998927116394" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Label>
+            <Label alignment="CENTER" layoutX="117.0" layoutY="63.0" prefHeight="31.0" prefWidth="88.0" text="Archivo:" textFill="WHITE" textOverrun="CLIP">
+               <font>
+                  <Font name="Times New Roman" size="24.0" />
+               </font>
+               <effect>
+                  <DropShadow height="63.12" radius="33.9825" width="74.81">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" opacity="0.47999998927116394" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Label>
+            <Label layoutX="78.0" layoutY="20.0" prefHeight="30.0" prefWidth="166.0" text="Editar Entrega">
+               <font>
+                  <Font name="Times New Roman" size="27.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="0.7424241990754099" endY="0.8598484830422835" startX="0.7424241846257991">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.38823530077934265" green="0.27450981736183167" blue="0.0784313753247261" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" green="0.7372549176216125" blue="0.12941177189350128" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+               <effect>
+                  <DropShadow height="23.35" radius="10.5875">
+                     <color>
+                        <Color red="0.8100000023841858" green="0.624239981174469" blue="0.11339999735355377" opacity="0.6808510422706604" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Label>
+            <Button fx:id="btn_editSubmission" layoutX="94.0" layoutY="257.0" mnemonicParsing="false" onAction="#EditSubmission" onMouseEntered="#FX" prefHeight="40.0" prefWidth="134.0" style="-fx-background-radius: 24; -fx-border-radius: 24; -fx-background-color: #05142b; -fx-border-color: #38547e;" text="Modificar" textFill="#ae7f0f">
+               <font>
+                  <Font name="Times New Roman Italic" size="18.0" />
+               </font>
+               <effect>
+                  <DropShadow height="35.04" radius="17.02" spread="0.06" width="35.04">
+                     <color>
+                        <Color red="0.16596491634845734" green="0.23763157427310944" blue="0.4526315927505493" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Button>
+            <TextField fx:id="tf_fileNameEdit" alignment="CENTER" layoutX="14.0" layoutY="95.0" prefHeight="43.0" prefWidth="294.0" styleClass="custom-text-field" />
+            <TextField fx:id="tf_DateEdit" alignment="CENTER" layoutX="92.0" layoutY="183.0" prefHeight="43.0" prefWidth="138.0" promptText="DD/MM/YYYY" styleClass="custom-text-field" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="680.0" layoutY="106.0" prefHeight="622.0" prefWidth="714.0" style="-fx-background-color: #39414e; -fx-background-radius: 25;">
+         <effect>
+            <DropShadow height="67.79" radius="35.7325" width="77.14">
+               <color>
+                  <Color opacity="0.6231002807617188" />
+               </color>
+            </DropShadow>
+         </effect>
+         <children>
+            <Label alignment="CENTER" layoutX="13.0" layoutY="14.0" prefHeight="34.0" prefWidth="686.0" text="Tus entregas" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman" size="30.0" />
+               </font>
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" opacity="0.5227963924407959" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Label>
+            <TableView fx:id="Submission_tv" layoutX="13.0" layoutY="56.0" onMouseClicked="#GetSubmissionData" prefHeight="210.0" prefWidth="687.0" style="-fx-background-color: #535b66; -fx-background-radius: 10;" stylesheets="@addall.css">
+               <columns>
+                  <TableColumn fx:id="tab_submissionID" editable="false" prefWidth="43.200008392333984" sortable="false" text="ID" />
+                  <TableColumn fx:id="tab_subAssignmentID" editable="false" prefWidth="86.4000244140625" sortable="false" text="Asignacion ID" />
+                  <TableColumn fx:id="tab_submissionScore" editable="false" minWidth="0.0" prefWidth="65.5999755859375" sortable="false" text="Nota" />
+                  <TableColumn fx:id="tab_submissionDate" editable="false" minWidth="0.0" prefWidth="89.60003662109375" sortable="false" text="Fecha" />
+                  <TableColumn fx:id="tab_submissionFile" editable="false" minWidth="0.0" prefWidth="131.19989013671875" sortable="false" text="Archivo" />
+                  <TableColumn fx:id="tab_submissionStatus" editable="false" minWidth="0.0" prefWidth="82.4000244140625" sortable="false" text="Estado" />
+                  <TableColumn fx:id="tab_submissionCommentProf" editable="false" minWidth="0.0" prefWidth="195.199951171875" sortable="false" text="Comentario" />
+               </columns>
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+            </TableView>
+            <Button fx:id="btn_deleteSubmission1" disable="true" layoutX="8.0" layoutY="277.0" mnemonicParsing="false" onAction="#DeleteSubmission" onMouseEntered="#FX" prefHeight="40.0" prefWidth="690.0" style="-fx-background-radius: 24; -fx-border-radius: 24; -fx-background-color: #05142b; -fx-border-color: #38547e;" text="Eliminar Entrega" textFill="#ae7f0f">
+               <font>
+                  <Font name="Times New Roman Italic" size="18.0" />
+               </font>
+               <effect>
+                  <DropShadow height="35.04" radius="17.02" spread="0.06" width="35.04">
+                     <color>
+                        <Color red="0.16596491634845734" green="0.23763157427310944" blue="0.4526315927505493" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Button>
+            <TableView fx:id="courses_tv" layoutX="10.0" layoutY="398.0" prefHeight="210.0" prefWidth="687.0" style="-fx-background-color: #535b66; -fx-background-radius: 10;" stylesheets="@addall.css">
+               <columns>
+                  <TableColumn fx:id="tab_courseID" editable="false" minWidth="0.0" prefWidth="152.0" sortable="false" text="ID" />
+                  <TableColumn fx:id="tab_courseName" editable="false" minWidth="0.0" prefWidth="152.0" sortable="false" text="Nombre" />
+                  <TableColumn fx:id="tab_courseProfessor" editable="false" minWidth="0.0" prefWidth="147.0" sortable="false" text="Profesor" />
+                  <TableColumn fx:id="tab_courseInfo" editable="false" minWidth="0.0" prefWidth="378.0" sortable="false" text="Informacion" />
+               </columns>
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+            </TableView>
+            <Label layoutX="285.0" layoutY="346.0" text=" Tus cursos" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman" size="30.0" />
+               </font>
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" opacity="0.5227963924407959" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="298.0" layoutY="385.0" prefHeight="74.0" prefWidth="81.0" style="-fx-background-color: #39414e; -fx-background-radius: 50;">
+         <effect>
+            <DropShadow height="67.79" radius="35.7325" width="77.14">
+               <color>
+                  <Color opacity="0.6231002807617188" />
+               </color>
+            </DropShadow>
+         </effect>
+         <children>
+            <TextField fx:id="tf_assigId" alignment="CENTER" editable="false" layoutX="17.0" layoutY="24.0" prefHeight="36.0" prefWidth="47.0" promptText="ID" styleClass="custom-text-field" />
+            <Label fx:id="lbl_typeOfID" alignment="CENTER" contentDisplay="CENTER" layoutX="15.0" layoutY="8.0" prefHeight="14.0" prefWidth="50.0" text="N/A" textAlignment="CENTER" textFill="WHITE" textOverrun="CENTER_ELLIPSIS">
+               <font>
+                  <Font name="Times New Roman" size="11.0" />
+               </font>
+               <effect>
+                  <DropShadow height="63.12" radius="33.9825" width="74.81">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" opacity="0.47999998927116394" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

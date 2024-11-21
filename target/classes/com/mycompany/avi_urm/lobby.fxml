@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Polygon?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="anch_myPane" prefHeight="770.0" prefWidth="1400.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.avi_urm.LobbyController">
+    <stylesheets>
+        <URL value="@lobby.css" />
+    </stylesheets>
+   <children>
+      <Polygon fill="#0d2136" layoutX="-375.0" layoutY="89.0" opacity="0.52" points="375.0, 64.59999084472656, 1493.4000244140625, 51.199981689453125, 993.3999633789062, -0.399993896484375, 375.0, 28.20000457763672" stroke="#0d2136" strokeType="INSIDE" />
+      <Polygon fill="#0d2136" layoutX="678.0" layoutY="109.0" opacity="0.72" points="148.39996337890625, 30.0, 722.0, 71.0, 722.0, 30.0, 375.0, 24.199996948242188" stroke="#0d2136" strokeType="INSIDE" />
+      <Polygon layoutX="20.0" layoutY="68.0" points="-50.00003433227539, 66.0, 1350.0, 75.19999694824219, 1350.0, -68.0, -50.00001525878906, -67.60000610351562" strokeType="INSIDE" AnchorPane.leftAnchor="-1.52587890625E-5" AnchorPane.rightAnchor="7.62939453125E-5">
+         <fill>
+            <LinearGradient endX="0.7424241990754099" endY="0.8598484830422835" startX="0.7424241846257991">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.0784313753247261" green="0.1764705926179886" blue="0.2862745225429535" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.019607843831181526" green="0.0784313753247261" blue="0.16862745583057404" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+         <stroke>
+            <LinearGradient endX="0.7424241990754099" endY="0.8598484830422835" startX="0.7424241846257991">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.0784313753247261" green="0.1764705926179886" blue="0.2862745225429535" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.019607843831181526" green="0.0784313753247261" blue="0.16862745583057404" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </stroke>
+      </Polygon>
+      <Label layoutX="156.0" layoutY="21.0" prefHeight="55.0" prefWidth="164.0" text="URM">
+         <font>
+            <Font name="Times New Roman" size="67.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="0.7424241990754099" endY="0.8598484830422835" startX="0.7424241846257991">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.38823530077934265" green="0.27450981736183167" blue="0.0784313753247261" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="0.7372549176216125" blue="0.12941177189350128" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <effect>
+            <DropShadow height="51.42" radius="31.0575" width="74.81">
+               <color>
+                  <Color red="0.8117647171020508" green="0.6745098233222961" blue="0.2666666805744171" opacity="0.47999998927116394" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Label>
+      <Label layoutX="33.0" layoutY="110.0" prefHeight="22.0" prefWidth="447.0" text="Unidos en Resiliencia, Magistrales en Educación.">
+         <font>
+            <Font name="Times New Roman Italic" size="17.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="0.7424241990754099" endY="0.8598484830422835" startX="0.7424241846257991">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.38823530077934265" green="0.27450981736183167" blue="0.0784313753247261" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="0.7372549176216125" blue="0.12941177189350128" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <effect>
+            <DropShadow height="68.97" radius="35.445" width="74.81">
+               <color>
+                  <Color red="0.8117647171020508" green="0.6745098233222961" blue="0.2666666805744171" opacity="0.7799999713897705" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Label>
+      <Label fx:id="lbl_exit" layoutX="1329.0" layoutY="2.0" onMouseClicked="#CloseWindown" prefHeight="65.0" prefWidth="29.0" rotate="45.0" styleClass="label-hover" stylesheets="@lobby.css" text="+">
+         <font>
+            <Font name="System Bold" size="51.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="0.7424241990754099" endY="0.8598484830422835" startX="0.7424241846257991" startY="0.09090907645948006">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.38823530077934265" green="0.27450981736183167" blue="0.0784313753247261" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="0.7372549176216125" blue="0.12941177189350128" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <effect>
+            <DropShadow height="16.35" radius="7.0975" width="14.04">
+               <color>
+                  <Color red="0.7200000286102295" green="0.5690400004386902" blue="0.18719999492168427" opacity="0.626139760017395" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Label>
+      <Label fx:id="lbl_minimize" layoutX="1266.0" layoutY="2.0" onMouseClicked="#MinimizeWindow" prefHeight="74.0" prefWidth="31.0" styleClass="label-hover" stylesheets="@lobby.css" text="-">
+         <font>
+            <Font name="System Bold" size="51.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="0.7424241990754099" endY="0.8598484830422835" startX="0.7424241846257991" startY="0.09090907645948006">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.38823530077934265" green="0.27450981736183167" blue="0.0784313753247261" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="0.7372549176216125" blue="0.12941177189350128" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <effect>
+            <DropShadow height="16.35" radius="7.0975" width="14.04">
+               <color>
+                  <Color red="0.7200000286102295" green="0.5690400004386902" blue="0.18719999492168427" opacity="0.626139760017395" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Label>
+      <ChoiceBox fx:id="cbx_options" layoutX="1147.0" layoutY="86.0" onMouseClicked="#ChangeWindow" prefHeight="30.0" prefWidth="215.0" style="-fx-border-radius: 15; -fx-background-radius: 15;" styleClass="list-cell" stylesheets="@lobby.css">
+         <effect>
+            <DropShadow height="31.53" radius="14.9725" spread="0.09" width="30.36">
+               <color>
+                  <Color red="0.38823530077934265" green="0.27450981736183167" blue="0.0784313753247261" opacity="0.6800000071525574" />
+               </color>
+            </DropShadow>
+         </effect>
+      </ChoiceBox>
+      <ImageView fx:id="imv_shield" fitHeight="99.0" fitWidth="99.0" layoutX="33.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true" />
+      <Label layoutX="622.0" layoutY="163.0" text="Hoy en la U" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman" size="58.0" />
+         </font>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="1.0" green="1.0" blue="1.0" opacity="0.5227963924407959" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Label>
+      <ImageView fx:id="imv_newsOne" fitHeight="266.0" fitWidth="474.0" layoutX="166.0" layoutY="472.0" pickOnBounds="true" preserveRatio="true">
+         <effect>
+            <InnerShadow choke="0.33" height="118.46" radius="58.93" width="119.26">
+               <color>
+                  <Color red="0.13333334028720856" green="0.1568627506494522" blue="0.1882352977991104" />
+               </color>
+            </InnerShadow>
+         </effect></ImageView>
+      <Label layoutX="51.0" layoutY="348.0" prefHeight="130.0" prefWidth="704.0" text="Líder en educación desde 1950, ofrece más de 100 programas. Campus moderno y enfoque en &#10;investigación. Forma líderes preparados para el mundo.&#10;&#10;¡Estamos celebrando nuestro 75 aniversario con eventos y actividades especiales para toda la &#10;comunidad!" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman" size="18.0" />
+         </font>
+         <effect>
+            <DropShadow height="63.11" radius="25.2075" width="39.72" />
+         </effect>
+      </Label>
+      <ImageView fx:id="imv_newsTwo" fitHeight="266.0" fitWidth="474.0" layoutX="860.0" layoutY="472.0" pickOnBounds="true" preserveRatio="true">
+         <effect>
+            <InnerShadow choke="0.33" height="118.46" radius="58.93" width="119.26">
+               <color>
+                  <Color red="0.13333334028720856" green="0.1568627506494522" blue="0.1882352977991104" />
+               </color>
+            </InnerShadow>
+         </effect></ImageView>
+      <Label layoutX="826.0" layoutY="371.0" prefHeight="65.0" prefWidth="484.0" stylesheets="@lobby.css" text="Nuestros graduados son líderes en múltiples industrias. &#10;¡Felicitaciones por sus logros excepcionales y un futuro brillante!" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman" size="18.0" />
+         </font>
+         <effect>
+            <DropShadow height="63.11" radius="25.2075" width="39.72" />
+         </effect>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#313946" height="425.0" layoutX="763.0" layoutY="330.0" stroke="#313946" strokeType="INSIDE" width="4.0">
+         <effect>
+            <DropShadow height="136.8" radius="59.42" width="102.88">
+               <color>
+                  <Color red="0.75789475440979" green="0.75789475440979" blue="0.75789475440979" opacity="0.5699999928474426" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Rectangle>
+      <Label layoutX="51.0" layoutY="302.0" prefHeight="55.0" prefWidth="334.0" text="75 años siendo líderes:">
+         <font>
+            <Font name="Times New Roman Italic" size="35.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="0.7424241990754099" endY="0.8598484830422835" startX="0.7424241846257991">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.38823530077934265" green="0.27450981736183167" blue="0.0784313753247261" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="0.7372549176216125" blue="0.12941177189350128" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <effect>
+            <DropShadow height="51.42" radius="31.0575" width="74.81">
+               <color>
+                  <Color red="0.8117647171020508" green="0.6745098233222961" blue="0.2666666805744171" opacity="0.47999998927116394" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Label>
+      <Label layoutX="826.0" layoutY="302.0" prefHeight="55.0" prefWidth="401.0" text="Profesionales de renombre:">
+         <font>
+            <Font name="Times New Roman Italic" size="35.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="0.7424241990754099" endY="0.8598484830422835" startX="0.7424241846257991">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.38823530077934265" green="0.27450981736183167" blue="0.0784313753247261" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="0.7372549176216125" blue="0.12941177189350128" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <effect>
+            <DropShadow height="51.42" radius="31.0575" width="74.81">
+               <color>
+                  <Color red="0.8117647171020508" green="0.6745098233222961" blue="0.2666666805744171" opacity="0.47999998927116394" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Label>
+   </children>
+   <effect>
+      <InnerShadow choke="0.46" height="90.16" radius="41.325" width="77.14">
+         <color>
+            <Color red="0.019200000911951065" green="0.04960000142455101" blue="0.07999999821186066" opacity="0.14969602227210999" />
+         </color>
+      </InnerShadow>
+   </effect>
+</AnchorPane>
